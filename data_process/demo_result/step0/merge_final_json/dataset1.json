@@ -1,0 +1,29 @@
+{
+    "gm1252760410-365677148_part2": {
+        "metadata": {
+            "cut": [
+                0,
+                95
+            ],
+            "crop": [
+                0,
+                1280,
+                0,
+                720
+            ],
+            "tech": 2.082,
+            "motion": 0.01223986130207777,
+            "fps": 29.969999313354492,
+            "num_frames": 95,
+            "resolution": {
+                "height": 720,
+                "width": 1280
+            },
+            "cap": [
+                "Three women are seen outdoors on a grassy area. The woman in the center has short dark hair and is wearing a blue top with a necklace. She is looking slightly to her left and appears to be engaged in a conversation. To her right, another woman with long dark hair and glasses is also looking in the same direction, seemingly listening or speaking. The background is a lush green lawn, indicating a sunny day. The women's expressions suggest they are having a casual and friendly interaction. The camera remains static, focusing on the group as they converse."
+            ],
+            "path": "gm1252760410-365677148_part2.mp4",
+            "aesthetic": 5.070407867431641
+        }
+    }
+}

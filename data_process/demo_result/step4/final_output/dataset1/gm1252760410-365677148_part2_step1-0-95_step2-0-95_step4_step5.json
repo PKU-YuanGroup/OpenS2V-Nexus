@@ -1,0 +1,50 @@
+{
+    "metadata": {
+        "cut": [
+            0,
+            95
+        ],
+        "crop": [
+            0,
+            1280,
+            0,
+            720
+        ],
+        "tech": 2.082,
+        "motion": 0.01223986130207777,
+        "fps": 29.969999313354492,
+        "num_frames": 95,
+        "resolution": {
+            "height": 720,
+            "width": 1280
+        },
+        "cap": [
+            "Three women are seen outdoors on a grassy area. The woman in the center has short dark hair and is wearing a blue top with a necklace. She is looking slightly to her left and appears to be engaged in a conversation. To her right, another woman with long dark hair and glasses is also looking in the same direction, seemingly listening or speaking. The background is a lush green lawn, indicating a sunny day. The women's expressions suggest they are having a casual and friendly interaction. The camera remains static, focusing on the group as they converse."
+        ],
+        "path": "gm1252760410-365677148_part2.mp4",
+        "aesthetic": 5.070407867431641,
+        "face_cut": [
+            0,
+            95
+        ],
+        "face_cap_qwen": "The video features three individuals outdoors on a grassy area, likely during the daytime given the bright lighting and shadows cast on the ground. The central figure, a woman with short dark hair, is wearing a blue top and a necklace. She appears to be engaged in conversation with another individual whose face is partially visible on the right side of the frame. This person has long dark hair and is wearing glasses. A third person, only partially visible on the left, seems to be wearing a white lace top.\n\nThe woman in the blue top is looking slightly to her right, possibly at the person with glasses, while her mouth moves as if she is speaking. Her expression shifts subtly throughout the frames, indicating an ongoing dialogue. The background consists of green grass, suggesting a park or garden setting. The lighting is natural, with sunlight illuminating the scene evenly.\n\nThere is no significant camera movement; the shot remains relatively static, focusing on capturing the interaction between the two women. The framing centers around the central figure, with slight adjustments to keep her in focus as she moves her head and mouth. The overall atmosphere suggests a casual, friendly conversation taking place in a relaxed outdoor environment."
+    },
+    "word_tags": {
+        "background": [
+            "grassy area",
+            "green grass",
+            "park or garden setting"
+        ],
+        "subject": [
+            "woman",
+            "individual",
+            "person"
+        ],
+        "object": [
+            "blue top",
+            "necklace",
+            "glasses",
+            "white lace top"
+        ]
+    }
+}

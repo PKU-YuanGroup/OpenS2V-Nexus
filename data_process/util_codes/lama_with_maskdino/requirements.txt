@@ -1,0 +1,12 @@
+kornia
+scikit-image
+scikit-learn
+easydict
+pytorch_lightning
+ftfy
+regex
+tqdm
+albumentations
+webdataset
+simple_lama_inpainting
+git+https://github.com/openai/CLIP.git
