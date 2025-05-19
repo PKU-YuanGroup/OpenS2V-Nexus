@@ -336,13 +336,13 @@ def gme_aes_inpaint(
         image_pooled_output = gme_model.get_image_embeddings(
             images=images, is_query=False, show_progress_bar=False
         )
-        clip_scores = (text_pooled_output * image_pooled_output).sum(-1)
+        gme_scores = (text_pooled_output * image_pooled_output).sum(-1)
         # For Aesthetic Score
         aes_scores = run_aesthetic_laion(aes_model, images)
 
     # Save result
     for idx, (i, class_name, resized_image) in enumerate(annotations):
-        gme_score = float(clip_scores[idx])
+        gme_score = float(gme_scores[idx])
         aes_score = float(aes_scores[idx].detach().item())
 
         json_all_data["annotation"]["ann_frame_data"]["annotations"][i]["gme_score"] = (
@@ -565,51 +565,44 @@ def post_process_all(
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="YoloWorld-SAM2.1 Model Configuration")
+    parser = argparse.ArgumentParser()
 
     # all
     parser.add_argument(
         "--input_video_json",
         default="demo_result/step4/merge_final_json/dataset1.json",
-        help="Path to the folder containing JSON files.",
     )
     parser.add_argument(
         "--offload_images_folder",
         type=str,
         default="demo_result/step5/temp_offload_images",
-        help="Path to the input image",
     )
     parser.add_argument(
         "--output_json_folder",
         type=str,
         default="demo_result/step5/final_output/dataset1",
-        help="Path to save the output",
     )
     # sam2.1
     parser.add_argument(
         "--sam_checkpoint",
         type=str,
         default="OpenS2V-Weight/sam2.1_hiera_large.pt",
-        help="Path to the model sam_checkpoint",
     )
     parser.add_argument(
         "--sam_model_cfg",
         type=str,
         default="configs/sam2.1/sam2.1_hiera_l.yaml",
-        help="Path to the model configuration file",
     )
     # grounding dino
     parser.add_argument(
         "--gd_config",
         default="util_codes/groundingsam2/grounding_dino/groundingdino/config/GroundingDINO_SwinT_OGC.py",
         type=str,
-        help="test config file path",
     )
     parser.add_argument(
         "--gd_checkpoint",
         default="OpenS2V-Weight/groundingdino_swint_ogc.pth",
         type=str,
-        help="checkpoint file",
     )
     # gme model
     parser.add_argument(

@@ -398,7 +398,7 @@ def split_list(data, nums, part):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Process MP4 files with YOLO models.")
+    parser = argparse.ArgumentParser()
     parser.add_argument(
         "--model_path",
         type=str,

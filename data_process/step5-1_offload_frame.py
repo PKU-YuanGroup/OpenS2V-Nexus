@@ -45,29 +45,25 @@ def process_json_file(key, value, input_video_root, output_image_folder):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="YoloWorld-SAM2.1 Model Configuration")
+    parser = argparse.ArgumentParser()
     parser.add_argument(
         "--input_video_json",
         default="demo_result/step4/merge_final_json/dataset1.json",
-        help="Path to the folder containing JSON files.",
     )
     parser.add_argument(
         "--input_video_root",
         type=str,
         default="demo_result/step0/videos/dataset1",
-        help="Path to the input image",
     )
     parser.add_argument(
         "--output_image_folder",
         type=str,
         default="demo_result/step5/temp_offload_images",
-        help="Path to save the output",
     )
     parser.add_argument(
         "--num_workers",
         type=int,
         default=96,
-        help="Number of processes to use for parallel processing",
     )
     return parser.parse_args()
 

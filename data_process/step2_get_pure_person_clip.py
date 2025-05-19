@@ -123,7 +123,7 @@ def process_files(json_file, input_json_folder, output_json_folder):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Video Processing Parameters")
+    parser = argparse.ArgumentParser()
     parser.add_argument(
         "--input_json_folder",
         type=str,
@@ -134,9 +134,7 @@ def parse_args():
         type=str,
         default="demo_result/step2/final_output/dataset1",
     )
-    parser.add_argument(
-        "--num_workers", type=int, default=1, help="Max number of parallel workers"
-    )
+    parser.add_argument("--num_workers", type=int, default=1)
     return parser.parse_args()
 
 

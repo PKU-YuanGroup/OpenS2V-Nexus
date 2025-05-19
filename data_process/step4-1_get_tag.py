@@ -178,9 +178,7 @@ def split_list(data, nums, part):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(
-        description="Process some input and output folders with model settings."
-    )
+    parser = argparse.ArgumentParser()
     parser.add_argument(
         "--input_video_json",
         type=str,
@@ -191,9 +189,7 @@ def parse_args():
         type=str,
         default="demo_result/step4/final_output/dataset1",
     )
-    parser.add_argument(
-        "--api_key", type=str, default="sk-3845a3e5f3d84ecd847c20b9eb543fe8"
-    )
+    parser.add_argument("--api_key", type=str, default=None)
     parser.add_argument("--model_name", type=str, default="deepseek-chat")
     parser.add_argument("--base_url", type=str, default="https://api.deepseek.com/v1")
     parser.add_argument("--num_workers", type=int, default=1)
