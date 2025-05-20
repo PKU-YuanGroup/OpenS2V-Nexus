@@ -75,7 +75,7 @@ def parse_args():
     parser.add_argument(
         "--gme_score_model_path",
         type=str,
-        default="/mnt/workspace/checkpoints/Alibaba-NLP/gme-Qwen2-VL-7B-Instruct",
+        default="Alibaba-NLP/gme-Qwen2-VL-7B-Instruct",
     )
     parser.add_argument(
         "--num_workers",
