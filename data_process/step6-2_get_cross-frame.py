@@ -68,14 +68,14 @@ def parse_args():
         default="demo_result/step0/videos/dataset1",
     )
     parser.add_argument(
-        "--output_json_file",
+        "--output_json_folder",
         type=str,
-        default="demo_result/step6/cross-frames-images/final_cluster_videos.json",
+        default="demo_result/step6/cross-frames-images/",
     )
     parser.add_argument(
         "--gme_score_model_path",
         type=str,
-        default="Alibaba-NLP/gme-Qwen2-VL-7B-Instruct",
+        default="/mnt/workspace/checkpoints/Alibaba-NLP/gme-Qwen2-VL-7B-Instruct",
     )
     parser.add_argument(
         "--num_workers",
@@ -91,16 +91,13 @@ def main():
     input_cluster_json = args.input_cluster_json
     input_video_root = args.input_video_root
     input_video_json = args.input_video_json
-    output_json_file = args.output_json_file
+    output_json_folder = args.output_json_folder
     gme_score_model_path = args.gme_score_model_path
+
+    os.makedirs(output_json_folder, exist_ok=True)
 
     text_similarity_threshold = 0.6
     imgae_similarity_threshold = 0.6
-
-    os.makedirs(os.path.dirname(output_json_file), exist_ok=True)
-    if os.path.exists(output_json_file):
-        print("already process all item!")
-        return
 
     with open(input_cluster_json, "r") as f:
         cluster_data = json.load(f)
@@ -111,11 +108,15 @@ def main():
 
     gme_model = GmeQwen2VL(gme_score_model_path, attn_model="flash_attention_2")
 
-    match_data = {}
+    
     for key, data in tqdm(
         cluster_data_items, desc="Processing Files", total=len(cluster_data_items)
     ):
-        match_data[key] = []
+        temp_json_path = os.path.join(output_json_folder, f"{key}.json")
+        if os.path.exists(temp_json_path):
+            print(f"already process {key}")
+            return
+        temp_match_data = []
         for cur_idx in range(len(data)):
             cur_data = all_data[data[cur_idx]]
             cur_frame_idx = cur_data["annotation"]["ann_frame_data"]["ann_frame_idx"]
@@ -209,12 +210,12 @@ def main():
                                     "cur_frame_idx": cur_frame_idx,
                                     "aft_frame_idx": aft_frame_idx,
                                 }
-                                match_data[key].append(temp_data)
+                                temp_match_data.append(temp_data)
 
-        with open(output_json_file, "w") as f:
-            json.dump(match_data, f, indent=2)
+        with open(temp_json_path, "w") as f:
+            json.dump(temp_match_data, f, indent=2)
 
-        print(f"Match data saved to {output_json_file}")
+        print(f"Match data saved to {output_json_folder}")
 
 
 if __name__ == "__main__":
