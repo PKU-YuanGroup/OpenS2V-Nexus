@@ -1,0 +1,302 @@
+{
+    "singleobj_1": {
+        "img_paths": [
+            "Images/singleobject/cup/52.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a teapot sitting on a cozy kitchen table, steam rising gently from its spout. The camera zooms in to capture the swirling steam, which moves gracefully in the warm light. A hand reaches into the frame, lifting the teapot\u2019s lid slightly, causing the steam to intensify for a moment. As the camera shifts, the soft clink of a cup being placed next to the teapot adds to the peaceful ambiance. The camera pulls back to show the kitchen\u2019s warm, inviting atmosphere, with the teapot remaining the focal point as the steam continues to rise, filling the scene with a sense of calm and comfort.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Cup"
+        ]
+    },
+    "singleobj_2": {
+        "img_paths": [
+            "Images/singleobject/camera/24.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a vintage camera resting on an old wooden desk, surrounded by scattered photographs. The camera zooms in to capture the details of the camera\u2014its weathered leather, brass accents, and the glass lens catching the light. A hand gently picks up one of the photographs, flipping it over to reveal its back. The camera shifts focus between the photos and the camera, as the hand adjusts the camera\u2019s settings with a soft click. As the hand places the photo back onto the desk, a slight breeze causes a few of the scattered photographs to shift, creating subtle motion in the scene. The soft sound of the camera\u2019s dials and the faint rustle of paper add to the nostalgic atmosphere of the moment.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Camera"
+        ]
+    },
+    "singleobj_3": {
+        "img_paths": [
+            "Images/singleobject/shoes/22.jpg"
+        ],
+        "prompt": "The video begins with a person dribbling a basketball on the court, their movements quick and focused. The camera shifts to a close-up of their basketball shoes as they pivot and make a sharp move, the soles gripping the court with each step. The shoes\u2019 sleek design and vibrant colors are highlighted as they absorb the impact of quick cuts and jumps. The camera follows the motion of the shoes, capturing the flexing of the material as the player springs for a shot. The sound of sneakers squeaking against the hardwood and the basketball bouncing fills the background, emphasizing the fast-paced energy of the game. The shoes remain the focal point, their performance and durability in action as the player continues to move.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Shoes"
+        ]
+    },
+    "singleobj_4": {
+        "img_paths": [
+            "Images/singleobject/bike/17.jpg"
+        ],
+        "prompt": "The video opens with a person pedaling smoothly on a bicycle along a quiet street. The camera focuses on the rider, capturing their steady rhythm as they effortlessly glide through the scene. The wind slightly tousles their hair as they lean into each pedal, the sound of the tires humming against the pavement. The sunlight creates a soft glow on their face, highlighting the focus in their eyes. As the camera shifts, the street and passing scenery blur slightly, emphasizing the motion and fluidity of the ride. The cyclist shifts slightly to navigate a gentle turn, the bicycle responding with subtle, fluid movement, all while maintaining a peaceful, calm pace. The sound of soft wind and the steady cadence of pedaling fill the background, creating a serene, uplifting atmosphere.\n\n\nbackground",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Bike"
+        ]
+    },
+    "singleobj_5": {
+        "img_paths": [
+            "Images/singleobject/lamp/15.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a street lamp, its warm glow casting soft light across the cobblestone street below. The camera slowly zooms out, revealing the lantern-style lamp against a dusky sky, with scattered clouds catching the last light of sunset. As the breeze stirs, the faint rustle of leaves can be heard, and the soft light from the lamp flickers slightly, casting changing shadows on the cobblestones. The camera moves gently around the scene, capturing the play of light and shadow, with the street lamp remaining the focal point. The distant sound of footsteps or faint city noise adds to the calm yet slightly mysterious atmosphere of the quiet evening.\n\nbackground",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Lamp"
+        ]
+    },
+    "singleobj_6": {
+        "img_paths": [
+            "Images/singleobject/clothes/41.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a t-shirt laid out on a sunny rock, the fabric gently catching the light of the sun. The camera zooms in to capture the texture of the shirt as it rests on the rock, with the surrounding hiking trail visible in the background. A light breeze picks up, causing the edges of the shirt to flutter slightly. The camera follows the movement of the fabric as it shifts with the wind. As the camera pulls back, the serene mountain landscape unfolds, with distant trees and a winding trail. The sounds of rustling leaves and distant birdsong add to the calm atmosphere, emphasizing the quiet, peaceful moment in nature.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Clothes"
+        ]
+    },
+    "singleobj_7": {
+        "img_paths": [
+            "Images/singleobject/teddybear/13.jpg"
+        ],
+        "prompt": "The video opens with a close-up of a teddy bear sitting on a park bench, surrounded by vibrant autumn leaves scattered across the ground. The camera slowly zooms in on the teddy bear, capturing the soft texture of its fur as a gentle breeze causes a few leaves to flutter around it. The bear remains still, its button eyes reflecting the soft light of the autumn afternoon. Occasionally, a leaf lands on the bear's lap, adding a subtle motion to the otherwise calm scene. The sound of leaves rustling and the distant chirping of birds creates a peaceful atmosphere, with the teddy bear remaining the focal point of the tranquil park setting.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Teddybear"
+        ]
+    },
+    "singleobj_8": {
+        "img_paths": [
+            "Images/singleobject/bowl/36.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a ceramic bowl filled with vibrant citrus fruits, resting on a rustic wooden table. The camera zooms in to capture the bright colors of the fruits\u2014orange, lemon, and lime\u2014contrasting against the smooth texture of the ceramic bowl. A hand reaches into the frame, gently picking up a fruit, causing the others to shift slightly in the bowl. As the fruit is lifted, the camera follows the motion, highlighting the fresh, glossy skin of the citrus. The camera pulls back to reveal the entire scene, with soft light filtering across the table, creating a warm, inviting atmosphere. The faint sound of a fruit being peeled or the soft clink of the bowl adds to the peaceful, natural setting.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Bowl"
+        ]
+    },
+    "singleobj_9": {
+        "img_paths": [
+            "Images/singleobject/guitar/39.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a guitar leaning against a wooden stool in a cozy, dimly lit room. The camera slowly zooms in to capture the guitar\u2019s smooth body and worn strings, reflecting the soft, warm light from nearby lamps. A hand enters the frame, gently adjusting the guitar, causing it to tilt slightly. The camera follows the movement, highlighting the subtle shift in the guitar\u2019s position. As the hand pulls back, the sound of soft acoustic strumming is heard, creating a peaceful, inviting atmosphere. The camera pulls back further to show the room's quiet, comfortable ambiance, with shadows dancing on the walls.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Guitar"
+        ]
+    },
+    "singleobj_10": {
+        "img_paths": [
+            "Images/singleobject/boat/62.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a boat anchored near a rocky coastline, gently bobbing on the calm water. The camera zooms in on the boat, capturing the smooth motion of the hull as it shifts with the subtle waves. The sail flutters slightly in the breeze, adding a sense of life to the still scene. The camera slowly pulls back, revealing the rugged coastline and the clear blue sky above, with the sound of the water lapping against the boat\u2019s sides. The boat remains anchored, but its subtle rocking interacts with the rhythm of the sea, creating a peaceful, tranquil atmosphere.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Boat"
+        ]
+    },
+    "singleobj_11": {
+        "img_paths": [
+            "Images/singleobject/hat/01.jpg"
+        ],
+        "prompt": "The video begins with a sunlit park bench, the warm light casting soft shadows on the wooden slats. A wide-brimmed hat rests on the bench, slightly tilted as a gentle breeze lifts the brim. The camera focuses on the hat, capturing the texture of the fabric and the subtle play of sunlight. In the background, the peaceful park scene unfolds with distant trees, scattered flowers, and occasional passersby. The calm sounds of nature enhance the quiet atmosphere, leaving the hat as the central, undisturbed subject of the moment.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Hat"
+        ]
+    },
+    "singleobj_12": {
+        "img_paths": [
+            "Images/singleobject/hat/32.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a cap resting on a park bench, surrounded by the lively atmosphere of a busy city park. The camera zooms in to capture the details of the cap, its fabric slightly wrinkled from being left behind. As people pass by in the background, the cap remains still, but a light breeze causes it to shift ever so slightly on the bench. The camera slowly pulls back, showing joggers, walkers, and children playing, creating a dynamic contrast between the cap\u2019s quiet stillness and the motion of the bustling park. The sound of footsteps and distant conversations adds to the lively, yet peaceful, scene.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Hat"
+        ]
+    },
+    "singleobj_13": {
+        "img_paths": [
+            "Images/singleobject/beer/04.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a beer can placed at the center of a circle made of international currencies\u2014paper bills and coins from various countries. The camera slowly zooms out, capturing the can\u2019s metallic surface and the intricate details of the surrounding money. As the camera moves, the currencies subtly shimmer, reflecting light, while the beer can remains the focal point. The sound of light ambient noise adds to the quiet significance of this global scene, emphasizing the connection between the beer can and its worldwide influence.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Beer"
+        ]
+    },
+    "singleobj_14": {
+        "img_paths": [
+            "Images/singleobject/earphone/55.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a pair of headphones lying on a wooden desk, their smooth ear cups reflecting the light. The camera slowly zooms in to capture the subtle details of the headphones, including the soft padding and sleek design. A hand enters the frame, gently adjusting the position of the headphones, causing them to slightly shift. The camera then moves to show the open laptop beside the headphones, the screen glowing softly. As the camera pulls back, the faint sound of music or a notification ping from the laptop can be heard, creating a quiet, focused atmosphere. The headphones remain the main focus, the subtle interaction with the desk and laptop adding to the sense of quiet productivity.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Earphone"
+        ]
+    },
+    "singleobj_15": {
+        "img_paths": [
+            "Images/singleobject/cup/27.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a steaming mug resting on a rainy window sill, its surface gently fogged by the warm steam. The camera zooms in to capture the delicate tendrils of steam rising from the mug, contrasting with the cool, rain-speckled window in the background. As the camera shifts, raindrops gently slide down the window, blurring the outside world. A hand reaches in to take the mug, causing a slight shift in the steam\u2019s movement. The camera follows the hand as it lifts the mug, the sound of rain tapping against the glass filling the quiet scene. The focus remains on the mug, with the rain and steam creating a calming, cozy atmosphere.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Cup"
+        ]
+    },
+    "singleobj_16": {
+        "img_paths": [
+            "Images/singleobject/glasses/58.jpg"
+        ],
+        "prompt": "The video begins with a close-up of sunglasses resting on a beach towel, the bright sun reflecting off the lenses. The camera zooms in to capture the details of the sunglasses, highlighting the sleek frame and the soft shimmer on the lenses. A gentle breeze causes the corner of the towel to flutter slightly, and the sunglasses shift ever so slightly on the fabric. The camera pulls back, revealing the sandy beach and the waves gently crashing in the distance. The soft sound of the ocean and the occasional rustle of the towel create a relaxed, sun-soaked atmosphere, with the sunglasses remaining the focal point, catching the light as they rest in the warmth of the day.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Glasses"
+        ]
+    },
+    "singleobj_17": {
+        "img_paths": [
+            "Images/singleobject/cup/30.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a vase sitting on a rustic wooden table, bathed in the soft, golden light of the morning sun. The camera zooms in on the vase, capturing its smooth surface and delicate details. As the sunlight shifts, the light slowly moves across the vase, creating subtle reflections and shadows on the table. A gentle breeze flows through an open window, causing a few flowers in the vase to sway slightly. The camera pulls back to reveal the tranquil scene, with the soft sound of the breeze and the warm ambiance of the room, emphasizing the peaceful interaction between the vase and the sunlight.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Cup"
+        ]
+    },
+    "singleobj_18": {
+        "img_paths": [
+            "Images/singleobject/toy/20.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a Magic Cube resting on a wooden desk, partially solved. The camera zooms in to capture the colorful tiles and the subtle shift of the cube as hands move it, turning it in precise motions. As the cube rotates, a few pieces align, completing sections of the puzzle. The sound of the clicking mechanism fills the background, adding to the focus and concentration in the scene. The camera shifts slightly, following the hands as they continue to manipulate the cube, highlighting the smooth, rhythmic motion of solving it piece by piece. The wooden desk provides a simple, quiet backdrop, emphasizing the cube's intricate movements.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Toy"
+        ]
+    },
+    "singleobj_19": {
+        "img_paths": [
+            "Images/singleobject/camera/23.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a vintage camera resting on a rustic wooden table, surrounded by old, worn books. The camera slowly zooms in on the camera, highlighting its details\u2014brass knobs, worn leather, and the reflective glass lens. A hand reaches into the frame, gently adjusting the camera\u2019s settings, the soft click of the dials echoing in the quiet room. The camera shifts focus to show the edges of the old books, their pages yellowed, creating a nostalgic backdrop. As the camera pulls back, the vintage camera is once again the focal point, capturing a sense of timelessness as the hand carefully handles it. The sound of pages flipping and the faint click of the camera\u2019s dials enhance the atmosphere of this quiet, thoughtful scene.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Camera"
+        ]
+    },
+    "singleobj_20": {
+        "img_paths": [
+            "Images/singleobject/toy/18.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a robot arm in a factory, its precise movements assembling a car on the production line. The camera follows the robot's arm as it expertly places parts onto the car's frame, the metallic components fitting together seamlessly. The sound of machinery hums in the background as the robot\u2019s arm moves fluidly, tightening bolts and adjusting pieces with sharp, calculated motions. The camera pans to show the assembly line, with other machines and robots working in sync, creating a rhythm of motion in the factory. As the robot continues its work, the car's shape gradually comes together, highlighting the efficiency and precision of the automation process. The factory's industrial atmosphere is complemented by the steady rhythm of gears and tools, showcasing a world of advanced technology at work.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Toy"
+        ]
+    },
+    "singleobj_21": {
+        "img_paths": [
+            "Images/singleobject/tv/49.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a vintage television resting on a classic wooden stand in a cozy living room. The camera zooms in to highlight the television\u2019s retro design\u2014its rounded edges, dials, and the soft glow of the screen. A hand reaches into the frame, gently turning one of the dials, causing the screen to flicker briefly. As the camera pulls back, the warm light of the room reflects off the wooden stand, adding a nostalgic ambiance. The television remains the focal point, the faint hum of static in the background, while the soft sound of a distant conversation or the crackling of a record player adds to the cozy, vintage atmosphere.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "TV"
+        ]
+    },
+    "singleobj_22": {
+        "img_paths": [
+            "Images/singleobject/ring/16.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a ring resting delicately on a soft, red rose petal. The camera slowly zooms in to highlight the intricate details of the ring, its polished surface catching the light. A gentle breeze causes the rose petal to slightly flutter, moving the ring ever so slightly. The camera shifts focus between the ring and the delicate movement of the petal, enhancing the quiet elegance of the scene. The soft rustling of the petals and a faint ambient sound contribute to the peaceful, intimate atmosphere.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Ring"
+        ]
+    },
+    "singleobj_23": {
+        "img_paths": [
+            "Images/singleobject/sofa/11.jpg"
+        ],
+        "prompt": "The video opens with a plush armchair positioned near a roaring fireplace, the warm glow from the flames casting soft light across the room. The camera slowly zooms in on the armchair, capturing its inviting cushions and rich fabric. As the fire crackles, a slight movement is seen in the armchair, as if someone just left it, leaving behind a faint impression in the cushions. The camera shifts to the flickering flames, then back to the chair, highlighting the contrast between the stillness of the armchair and the lively motion of the fire. The gentle crackling sound of the fire and the soft flicker of light create a warm, cozy atmosphere.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Sofa"
+        ]
+    },
+    "singleobj_24": {
+        "img_paths": [
+            "Images/singleobject/watch/12.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a watch casually left on an old wooden table, its shiny surface reflecting the soft light in the room. The camera slowly zooms in to capture the details of the watch\u2014its intricate design, the ticking motion of the second hand, and the wear on the wooden table beneath. A cup of coffee sits beside the watch, steam gently rising from it, creating a soft swirl in the air. Occasionally, the camera shifts focus between the watch and the coffee, with the watch\u2019s second hand continuing its steady motion. The sound of the soft ticking and the faint clink of the coffee cup adds to the peaceful, quiet ambiance of the scene.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Watch"
+        ]
+    },
+    "singleobj_25": {
+        "img_paths": [
+            "Images/singleobject/shoes/07.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a basketball shoe resting on a reflective surface, its vibrant, multicolored laces standing out against the sleek design. The camera slowly zooms in to capture the intricate details of the shoe\u2014its texture, stitching, and the dynamic play of colors in the laces. As the camera pulls back, the reflections on the surface create an interesting visual effect, enhancing the shoe\u2019s bold features. The video maintains focus on the shoe, emphasizing its design and energy, while subtle background sounds highlight the movement of the camera.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Shoes"
+        ]
+    },
+    "singleobj_26": {
+        "img_paths": [
+            "Images/singleobject/clock/56.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a clock hanging on the weathered wall of an old train station, its hands ticking steadily. The camera zooms in to capture the worn details of the clock\u2014its faded face and rusted metal frame. As the camera pulls back, the faint sound of a train\u2019s whistle is heard in the distance, and the clock\u2019s steady ticking becomes more pronounced in the otherwise quiet atmosphere. The wall behind it shows signs of age, with chipped paint and faded bricks. Occasionally, a slight vibration from a passing train causes the clock to tremble slightly, adding subtle motion to the otherwise still scene. The clock remains the focal point, symbolizing the passage of time in a timeless, nostalgic setting.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Clock"
+        ]
+    },
+    "singleobj_27": {
+        "img_paths": [
+            "Images/singleobject/bag/28.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a backpack resting on a rocky trail, surrounded by the rugged terrain of the mountains. The camera zooms in to highlight the texture of the backpack, worn from the journey, and the subtle shifting of the rocks beneath it. A light breeze causes the straps of the backpack to gently sway. As the camera pulls back, the vast mountain landscape is revealed, with distant peaks and patches of greenery. The sound of wind rustling through the trees and distant birdsong adds to the tranquil atmosphere. The backpack remains still, a quiet reminder of the journey, while the natural elements move around it.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Bag"
+        ]
+    },
+    "singleobj_28": {
+        "img_paths": [
+            "Images/singleobject/motor/00.jpg"
+        ],
+        "prompt": "The video opens with a custom-built motorcycle parked on cracked concrete, bathed in the warm light of the setting sun. The engine hums softly, then roars to life as the rider steps forward and twists the throttle. The rear wheel spins briefly, sending dust into the air.\n\nThe bike lifts off its stand and moves forward, its suspension compressing as the rider accelerates. The wheels grip the road, and the camera follows the smooth motion of the bike as it powers through the street. The exhaust emits a burst of sound, while the bike leans slightly into turns, its movement fluid and precise. Light and shadow shift with each motion, highlighting the motorcycle's sleek, aggressive form.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Motor"
+        ]
+    },
+    "singleobj_29": {
+        "img_paths": [
+            "Images/singleobject/hairdryer/26.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a hair dryer resting on a minimalist vanity, its sleek design standing out against the simple backdrop. The camera slowly zooms in, capturing the smooth surface of the hair dryer as soft light reflects off its polished exterior. A hand reaches into the frame, turning the hair dryer on, the gentle hum filling the room. As the camera pulls back, the mirror in the background reflects the bright bathroom, amplifying the clean, modern atmosphere. The hair dryer emits a soft stream of air, causing a few strands of hair to gently move in the reflection. The sound of the dryer\u2019s hum and the quiet ambiance of the bathroom create a peaceful, daily routine scene.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Hairdryer"
+        ]
+    },
+    "singleobj_30": {
+        "img_paths": [
+            "Images/singleobject/bag/57.jpg"
+        ],
+        "prompt": "The video begins with a close-up of a leather handbag resting on a polished mahogany desk, its rich texture and sleek design highlighted by the soft light. The camera zooms in to capture the subtle details of the handbag\u2014its stitching, the shine of the leather, and the clasp. A hand enters the frame, gently adjusting the bag, causing it to slightly shift on the desk. The camera follows the movement, focusing on the graceful motion of the handbag. As the camera pulls back, the gleaming wood of the desk reflects the handbag\u2019s surface, creating a warm, elegant atmosphere. The sound of a soft click or rustle from the bag adds to the calm, sophisticated vibe of the scene.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Bag"
+        ]
+    }
+}

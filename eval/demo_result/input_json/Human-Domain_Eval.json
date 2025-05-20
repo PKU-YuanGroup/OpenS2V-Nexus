@@ -1,0 +1,602 @@
+{
+    "singlehuman_1": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/15.png"
+        ],
+        "prompt": "The video depicts a young man sitting at a wooden desk, deeply engrossed in his work. he is wearing glasses and has long hair that falls over his shoulders. The man appears to be focused on a document or piece of paper in front of his, as he writes with a pen. his posture suggests concentration and determination. The desk is cluttered with numerous stacks of papers and documents, indicating a busy and possibly overwhelming workload. The lighting in the room is dim, casting shadows and creating a somewhat somber atmosphere. The man's expression is one of intense focus, with his hand resting on his chin, suggesting deep thought or contemplation. The overall scene conveys a sense of hard work and dedication, highlighting the challenges faced by individuals in managing their tasks and responsibilities. The presence of the large piles of paperwork emphasizes the volume of work that needs to be completed, adding to the pressure and stress associated with such tasks.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_2": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/5.png"
+        ],
+        "prompt": "A man gently clutching a bouquet of vibrant flowers, his eyes radiating a serene contentment as he glances at the camera. His slightly upturned lips convey a sense of calm joy, accompanied by a faint twinkle in his eye. The scene is set in a lush garden, brimming with colorful blooms and verdant foliage, creating a tranquil haven. The shot captures him from the waist up, emphasizing his relaxed stance and the natural harmony of his surroundings.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_3": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/11.png"
+        ],
+        "prompt": "The video features a man standing at an easel, focused intently as his brush dances across the canvas. His expression is one of deep concentration, with a hint of satisfaction as each brushstroke adds color and form. He wears a paint-splattered apron, and his hands move with confident precision. The setting, filled with scattered art supplies, open paint tubes, and unfinished sketches pinned to the wall, suggests an artist's studio. A large window on one side allows sunlight to stream in, casting a soft glow across the room and illuminating the colors on his canvas. The atmosphere is creative and inspired, with the man's intense focus and the lively colors on the canvas indicating a moment of artistic passion and expression.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_4": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/12.png"
+        ],
+        "prompt": "The video features a man with a rugged beard, wearing a leather jacket, riding a vintage motorcycle along a desert highway. His expression is focused, eyes narrowed slightly against the wind, as the setting sun casts a warm glow over the landscape. The highway stretches endlessly, bordered by arid land with occasional cacti and rocky outcrops. The motorcycle roars smoothly, leaving a light trail of dust. In the distance, hazy mountains are silhouetted against the amber sky. The scene suggests adventure and determination, evoking freedom, with the man riding purposefully through the tranquil, sunlit desert.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_5": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/3.png"
+        ],
+        "prompt": "The video shows a man celebrating his birthday, holding a piece of cake while he prepares to blow out the candles. He is smiling warmly, and as he closes his eyes to make a wish, a hint of emotion crosses his face—perhaps a moment of nostalgia or excitement. Around him, soft, ambient lighting from nearby candles casts a warm glow, and there are a few balloons and decorations in the background, suggesting a cozy celebration at home. He then blows out the candles gently, and his smile grows wider, radiating happiness and satisfaction. The overall atmosphere is cheerful and intimate, with the focus on the man's genuine facial expressions as he enjoys this special moment.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_6": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/4.png"
+        ],
+        "prompt": "The video shows a young boy sitting at a table, eating a piece of food. He appears to be enjoying his meal, as he takes a bite and chews it. The boy is wearing a blue shirt and has short hair. The background is dark, with some light coming from the left side of the frame. There is a straw visible on the right side of the frame, suggesting that there may be a drink next to the boy's plate. The overall atmosphere of the video seems casual and relaxed, with the focus on the boy's enjoyment of his food.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_7": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/9.png"
+        ],
+        "prompt": "The video captures a boy walking along a city street, filmed in black and white on a classic 35mm camera. His expression is thoughtful, his brow slightly furrowed as if he's lost in contemplation. The film grain adds a textured, timeless quality to the image, evoking a sense of nostalgia. Around him, the cityscape is filled with vintage buildings, cobblestone sidewalks, and softly blurred figures passing by, their outlines faint and indistinct. Streetlights cast a gentle glow, while shadows play across the boy's path, adding depth to the scene. The lighting highlights the boy's subtle smile, hinting at a fleeting moment of curiosity. The overall cinematic atmosphere, complete with classic film still aesthetics and dramatic contrasts, gives the scene an evocative and introspective feel.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_8": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/10.png"
+        ],
+        "prompt": "The video features a man sitting at a rustic wooden table in a café, sipping his coffee. He has short black hair and is dressed in a casual button-up shirt and jeans. The café has a warm, cozy atmosphere, with soft lighting and a few patrons in the background. The man seems relaxed as he scrolls through his phone, enjoying the peaceful moment away from the hustle of the day.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_9": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/13.png"
+        ],
+        "prompt": "In the video, a man is hiking through a dense forest. He is wearing a backpack, hiking boots, and a cap, with a light jacket to protect against the wind. The trail is narrow, surrounded by tall trees and thick underbrush. The man pauses to take in the scenery, breathing in the fresh air while the sounds of birds and rustling leaves fill the background.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_10": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/8.png"
+        ],
+        "prompt": "The video shows a man sitting on a park bench under a large oak tree, reading a book. He has a beard and is wearing a casual sweater and jeans. The park is quiet and green, with sunlight filtering through the tree branches. The man seems completely absorbed in his book, occasionally glancing up to enjoy the peaceful surroundings.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_11": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/1.png"
+        ],
+        "prompt": "In the video, a man is playing an acoustic guitar on a beach at sunset. He is wearing a simple t-shirt, shorts, and sunglasses, with his feet buried in the warm sand. The sun is dipping below the horizon, casting an orange glow across the sky and reflecting off the ocean. The sound of gentle waves adds to the relaxing atmosphere as the man strums a soft tune.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_12": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/7.png"
+        ],
+        "prompt": "The video features a man standing at the edge of a cliff, looking out over a vast mountain range. He has short, sandy hair and is dressed in hiking gear, including a jacket, boots, and gloves. The wind is blowing gently, and the view is breathtaking, with the mountains stretching endlessly in the distance. The man takes a deep breath, enjoying the sense of freedom and adventure.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_13": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/2.png"
+        ],
+        "prompt": "In the video, a man is working in a garden, planting flowers. He is wearing a straw hat, gloves, and a plaid shirt, with dirt on his jeans. The garden is full of vibrant flowers and greenery, and the sunlight creates a warm and inviting atmosphere. The man carefully places a flower in the soil, wiping his brow with the back of his hand before moving on to the next plant.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_14": {
+        "img_paths": [
+            "Images/singlehuman/crop_man/6.png"
+        ],
+        "prompt": "The video shows a man walking along a quiet street in the early morning. He is wearing a light jacket and running shoes, with earbuds in his ears. The street is mostly empty, and the city is just beginning to wake up. The man enjoys the calm of the early morning, his pace steady as he jogs down the empty road with the soft sound of his footsteps echoing in the stillness.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singlehuman_15": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/9.png"
+        ],
+        "prompt": "The video features a news reporter who is walking down a city street at night while holding a microphone and speaking to the camera. The reporter is wearing a white coat and a blue tie, and he appears to be reporting on a story related to the economy. The background shows a brightly lit cityscape with tall buildings and streetlights, creating a vibrant and dynamic atmosphere. The reporter's speech is accompanied by various text overlays that provide additional information about the story, such as \"\"Global Economic Forum\"\" and \"\"Economy is Growing Fast, Sure Global Rebound.\"\" These text elements suggest that the reporter is discussing economic trends and forecasts. Overall, the video captures a moment of news reporting in an urban setting, with the reporter providing insights into the state of the global economy",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_16": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/15.jpg"
+        ],
+        "prompt": "The video depicts a young girl walking through a greenhouse filled with lush green plants and vegetables. She is wearing a white dress and appears to be enjoying her time in the garden. The greenhouse has a wooden structure with large glass panels allowing plenty of natural light to enter. The plants are healthy and vibrant, with various types of vegetables growing in the rows. The girl seems to be exploring the greenhouse, possibly picking some of the vegetables or simply admiring the growth. The overall atmosphere is serene and peaceful, with the girl appearing content and happy in her surroundings.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_17": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/4.png"
+        ],
+        "prompt": "The video features a baby wearing a bright superhero cape, standing confidently with arms raised in a powerful pose. The baby has a determined look on their face, with eyes wide and lips pursed in concentration, as if ready to take on a challenge. The setting appears playful, with colorful toys scattered around and a soft rug underfoot, while sunlight streams through a nearby window, highlighting the fluttering cape and adding to the impression of heroism. The overall atmosphere is lighthearted and fun, with the baby's expressions capturing a mix of innocence and an adorable attempt at bravery, as if truly ready to save the day.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_18": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/8.png"
+        ],
+        "prompt": "The video features a little girl with pigtails, a backpack, and a bright smile, skipping joyfully down a bustling city street. She holds a bunch of colorful balloons that sway as she moves, her eyes wide with excitement. The backdrop of vibrant buildings and street vendors adds to the lively and cheerful atmosphere, capturing a sense of carefree happiness. The scene feels energetic and warm, with the girl's playful skipping and the colorful surroundings indicating a moment of childhood wonder amidst a busy urban setting.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_19": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/10.png"
+        ],
+        "prompt": "The video features a girl sitting on a stool, playing a guitar with her fingers moving skillfully across the strings, creating a soulful melody. Her eyes are closed, and there's a slight smile on her face, conveying a sense of deep connection to the music. The setting appears calm and intimate, with the girl's relaxed The video features a girl sitting on a stool in a softly lit room, playing a guitar with her fingers moving skillfully across the strings, creating a soulful melody. Her eyes are closed, and there's a slight smile on her face, conveying a sense of deep connection to the music. The setting appears calm and intimate, with warm lighting casting gentle shadows on the walls, and a few scattered musical notes or sheets on the floor around her. The girl's relaxed posture suggests she's lost in the moment. The overall atmosphere is serene and emotive, with her facial expression and focused strumming emphasizing her passion for the melody she plays. suggesting she's lost in the moment. The overall atmosphere is serene and emotive, with her facial expression and focused strumming emphasizing her passion for the melody she plays.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_20": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/2.png"
+        ],
+        "prompt": "The video features a girl standing by the beach, her long black hair gently swaying in the breeze. She is wearing a flowy, white sundress and has her hands on her hips. The golden sand stretches out behind her, with the waves softly crashing on the shore. The sun is setting in the background, casting a warm orange glow over the scene. The atmosphere is peaceful and serene, with the girl enjoying the moment in nature.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_21": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/13.jpg"
+        ],
+        "prompt": "The video shows a woman walking through a quiet, cobblestone street in an old European town. She is wearing a light jacket and a scarf, and her brown hair is pulled back into a ponytail. The street is lined with charming buildings and small cafes, and the scene feels cozy and inviting. The woman looks around, taking in the historic surroundings with a smile, as the soft afternoon light filters down from the sky.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_22": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/11.png"
+        ],
+        "prompt": "In the video, a girl is riding her bicycle down a winding path through a forest. She has long, wavy hair and is dressed in a casual t-shirt and denim shorts. The trees around her create a canopy of greenery, and the sunlight dappled through the leaves creates playful patterns on the ground. She smiles and enjoys the peacefulness of the forest, pedaling leisurely as birds chirp in the background.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_23": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/7.jpg"
+        ],
+        "prompt": "The video features a woman sitting in a cozy armchair in a library. She is wearing glasses and a knitted sweater, with her legs tucked up under her. She is reading a book, and the warm light from a nearby lamp casts a soft glow on her face. The shelves around her are filled with books, and the atmosphere is calm and intellectual, with the occasional sound of pages turning.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_24": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/3.png"
+        ],
+        "prompt": "The video shows a woman standing in a flower garden, surrounded by blooming roses and lilies. She is wearing a light pink dress with delicate lace details and a sun hat. Her blonde hair is loosely tied up, and she gently touches a flower as she admires the vibrant colors around her. The sun is shining brightly, creating a cheerful and refreshing atmosphere in the garden.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_25": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/1.png"
+        ],
+        "prompt": "In the video, a girl is sitting on a grassy hill, overlooking a vast field with wildflowers in full bloom. She is wearing a casual t-shirt and denim shorts, with a wide-brimmed hat. The wind is gently blowing through the tall grasses, and the sky is clear and blue. She gazes out at the horizon, lost in thought, enjoying the peaceful and open landscape.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_26": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/5.png"
+        ],
+        "prompt": "The video features a woman jogging along a trail beside a serene lake. She has short, curly hair and is wearing athletic wear and sneakers. The surrounding trees and the shimmering water create a peaceful atmosphere, while the woman maintains a steady pace, focusing on her exercise. The morning sunlight casts a soft glow on the scene, adding to the sense of calm.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_27": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/12.jpg"
+        ],
+        "prompt": "The video shows a girl dancing in an empty studio. She has long, flowing hair and is wearing a black leotard with a flowing skirt. She moves gracefully across the floor, her arms extended in fluid motions. The studio is bright with natural light coming through large windows, and the minimalist design of the room emphasizes the elegance of her movements.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_28": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/6.png"
+        ],
+        "prompt": "In the video, a woman is sitting at a café terrace, enjoying a cup of tea. She is wearing a light blouse and has her hair pulled back into a bun. The table in front of her is set with a small plate of pastries, and she takes a slow sip from her cup, savoring the moment. The bustling city street in the background creates a lively but relaxed atmosphere, as people walk by and cars pass in the distance.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_29": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/14.jpg"
+        ],
+        "prompt": "The video features a girl painting on a large canvas in a bright studio. She is wearing a paint-splattered apron and has her hair tied up in a bun. The studio is filled with art supplies and colorful paintings on the walls. She concentrates intently on her work, adding brushstrokes to her canvas as soft music plays in the background, creating an inspiring and creative atmosphere.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singlehuman_30": {
+        "img_paths": [
+            "Images/singlehuman/crop_woman/7.jpg"
+        ],
+        "prompt": "In the video, a woman is sitting at a café terrace, enjoying a cup of tea. She is wearing a light blouse and has her hair pulled back into a bun. The table in front of her is set with a small plate of pastries, and she takes a slow sip from her cup, savoring the moment. The bustling city street in the background creates a lively but relaxed atmosphere, as people walk by and cars pass in the distance.",
+        "synthesis_flag": "wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_1": {
+        "img_paths": [
+            "Images/singleface/crop_man/2.png"
+        ],
+        "prompt": "The video features a young man standing outdoors in a snowy park. he is wearing a colorful winter jacket with a floral pattern and a white knit hat. The background shows a snowy landscape with trees, benches, and a metal fence. The ground is covered in snow, and there is a light snowfall in the air. The man appears to be enjoying the winter weather, as he smiles and gives a thumbs-up gesture towards the camera. The overall atmosphere of the video is cheerful and festive, capturing the beauty of a snowy day in a park.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_2": {
+        "img_paths": [
+            "Images/singleface/crop_man/14.jpg"
+        ],
+        "prompt": "The video features a man walking down a city street at night, engrossed in his smartphone. He is dressed in a formal suit and tie, suggesting he might be a professional or businessman. The street is illuminated with various neon lights and signs, creating a vibrant and lively atmosphere. The man appears to be focused on his phone, possibly texting or browsing, as he walks. The background shows tall buildings with lit-up windows, indicating that this scene takes place in an urban setting. The overall mood of the video is one of modernity and connectivity, with the man's attire and the use of technology highlighting the blend of traditional and contemporary elements in the cityscape.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_3": {
+        "img_paths": [
+            "Images/singleface/crop_man/11.jpg"
+        ],
+        "prompt": "The video features a man sitting in the driver's seat of a car. he is wearing glasses and a dark-colored dress, and his hair is neatly styled. The interior of the car appears to be modern, with a light-colored dashboard and a steering wheel that has some buttons on it. The background outside the car shows greenery, suggesting that the car is parked near a park or a garden. The man seems to be looking out the window, possibly observing something outside. The overall atmosphere of the video is calm and serene.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_4": {
+        "img_paths": [
+            "Images/singleface/crop_man/3.png"
+        ],
+        "prompt": "The video features a man standing next to an airplane, engaged in a conversation on his cell phone. he is wearing sunglasses and a black top, and he appears to be talking seriously. The airplane has a green stripe running along its side, and there is a large engine visible behind his. The man seems to be standing near the entrance of the airplane, possibly preparing to board or just having disembarked. The setting suggests that he might be at an airport or a private airfield. The overall atmosphere of the video is professional and focused, with the man's attire and the presence of the airplane indicating a business or travel context.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_5": {
+        "img_paths": [
+            "Images/singleface/crop_man/4.png"
+        ],
+        "prompt": "The video features a man sitting at a desk in front of a large screen displaying an American flag. he is wearing a plaid shirt and appears to be delivering a news report or commentary. The background behind his consists of a large screen with the American flag displayed prominently. The man is speaking, gesturing with his hands as he talks. The setting suggests that this is a newsroom or studio environment where news broadcasts or reports are produced. The American flag on the screen behind his indicates that the content may be related to news stories involving the United States. The man's attire and the professional setup suggest that he is likely a news anchor or reporter. Overall, the video captures a moment in a news broadcast where the man is providing information or commentary, with the American flag serving as a visual backdrop.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_6": {
+        "img_paths": [
+            "Images/singleface/crop_man/13.jpg"
+        ],
+        "prompt": "A man gazing thoughtfully at far away, with a serene expression that reveals a slight furrowing of the brow and a softening around the eyes. His lips part subtly, as if caught in a moment of contemplation or inspiration. The open field around him is expansive, covered in wildflowers that sway gently in the breeze, under a vast, clear blue sky. The full-body shot captures his casual stance, with hands resting in his pockets, and the light breeze tousling his hair slightly.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_7": {
+        "img_paths": [
+            "Images/singleface/crop_man/8.jpg"
+        ],
+        "prompt": "The video features a young man who appears to be a content creator or streamer. he is wearing a green sleeveless top and red headphones. The background is illuminated with vibrant neon lights, predominantly in shades of purple and blue, creating a lively and energetic atmosphere. The man is seated in front of a microphone, suggesting he is recording a podcast, streaming a live broadcast, or engaging in some form of online communication. The setting appears to be a well-lit room with a curtain and a lamp visible in the background, adding to the cozy and inviting ambiance. The man's expression and body language indicate he is actively speaking or singing into the microphone, possibly sharing his thoughts, stories, or performing music. The overall scene conveys a sense of engagement and interaction, likely aimed at an audience who is tuned in to his content.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_8": {
+        "img_paths": [
+            "Images/singleface/crop_man/12.jpg"
+        ],
+        "prompt": "The video features a man sitting in a red armchair, enjoying a cup of coffee or tea. he is dressed in a light-colored outfit and has long dark-haired hair. The setting appears to be indoors, with large windows providing a view of a misty or foggy coastal landscape outside. The room has a modern design with geometric structures visible in the background. There is a small round table next to the armchair, also holding a cup. The overall atmosphere suggests a calm and serene moment, possibly during a cold or rainy day by the sea.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_9": {
+        "img_paths": [
+            "Images/singleface/crop_man/6.png"
+        ],
+        "prompt": "The video features a man jogging along a grassy path next to a body of water, likely a lake or river. he is wearing a white sports bra and appears to be focused on his run. The background shows a serene outdoor setting with green trees and a clear sky, suggesting it is a pleasant day for outdoor activities. The man's hair is tied back, and he seems to be moving at a steady pace, indicating he is likely engaged in a regular exercise routine. The overall atmosphere of the video is peaceful and active, capturing the essence of a healthy lifestyle.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_10": {
+        "img_paths": [
+            "Images/singleface/crop_man/5.png"
+        ],
+        "prompt": "The video features a man dressed in a blue suit and tie, sitting in a newsroom setting. The background includes a large screen displaying various news graphics and text. The man appears to be a news anchor or host, given his professional attire and the context of the setting. The newsroom has a modern design with a mix of wood and glass elements. The text on the screen includes phrases like \"\"NEWSROOM\"\" and \"\"UNIFIED BIOLOGICAL,\"\" suggesting that the news segment might be discussing a biological or scientific topic. The overall atmosphere is professional and focused on delivering news content.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_11": {
+        "img_paths": [
+            "Images/singleface/crop_man/15.jpg"
+        ],
+        "prompt": "The video depicts a young man engaged in an intense gaming session. he is seated in a gaming chair, which is designed to provide ergonomic support and comfort during extended periods of use. The chair has a distinctive design, featuring a logo or emblem on the backrest. The man is wearing a gray sweatshirt and glasses, and he is equipped with a headset that includes a microphone, allowing his to communicate with other players or streamers. The headset is connected to a computer, which is visible in the foreground of the image. The computer setup includes a large monitor, likely an LED or LCD display, which is turned on and showing a game interface. The room has a futuristic and vibrant atmosphere, with neon lights illuminating the space. The lighting creates a dynamic and immersive environment, enhancing the gaming experience. The overall setting suggests a high-tech and immersive gaming environment, possibly in a professional gaming setup or a dedicated gaming room.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_12": {
+        "img_paths": [
+            "Images/singleface/crop_man/10.jpg"
+        ],
+        "prompt": "The video features a young man walking through a park during sunset. he is wearing a sleeveless top with a geometric pattern and denim shorts. The man has long, dark hair that falls over his shoulders. In his hands, he holds a skateboard, which appears to be orange and green in color. The park is lush with greenery, and the sunlight filters through the trees, creating a warm and serene atmosphere. The background includes a building partially obscured by foliage, and other people can be seen in the distance, enjoying the park as well. The overall mood of the video is peaceful and relaxed, capturing a moment of leisure and enjoyment in nature.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_13": {
+        "img_paths": [
+            "Images/singleface/crop_man/1.png"
+        ],
+        "prompt": "The video depicts a young man sitting at a wooden desk, deeply engrossed in his work. he is wearing glasses and has long hair that falls over his shoulders. The man appears to be focused on a document or piece of paper in front of his, as he writes with a pen. his posture suggests concentration and determination. The desk is cluttered with numerous stacks of papers and documents, indicating a busy and possibly overwhelming workload. The lighting in the room is dim, casting shadows and creating a somewhat somber atmosphere. The man's expression is one of intense focus, with his hand resting on his chin, suggesting deep thought or contemplation. The overall scene conveys a sense of hard work and dedication, highlighting the challenges faced by individuals in managing their tasks and responsibilities. The presence of the large piles of paperwork emphasizes the volume of work that needs to be completed, adding to the pressure and stress associated with such tasks.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_14": {
+        "img_paths": [
+            "Images/singleface/crop_man/7.jpg"
+        ],
+        "prompt": "The video features a man standing in front of the camera, his gaze focused and intense as he holds the basketball. He is dressed in athletic gear, his posture exuding concentration. The basketball is positioned firmly in his hands as he prepares for his next move, his body language reflecting his dedication. The setting appears to be an urban street court, with the fading light of dusk casting a soft glow over the scene. The man's serious expression and steady grip on the ball suggest that he is in the midst of a practice session, honing his skills with focused precision. The overall atmosphere of the video is one of determination and discipline, with the man's attire and the basketball court indicating a commitment to the sport.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_15": {
+        "img_paths": [
+            "Images/singleface/crop_man/9.jpg"
+        ],
+        "prompt": "The video features a man with dark-haired hair, wearing a blue tank top and holding a pink tank top on a hanger. he appears to be in a clothing store or a similar retail environment, as there are racks of clothes visible in the background. The man is speaking to the camera, possibly providing a review or discussing the tank top he is holding. he has colorful bracelets on his wrist and is wearing a necklace with multiple beads. his expression suggests he is engaged in a conversation or presentation. The setting seems to be indoors, with artificial lighting illuminating the scene.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Man"
+        ]
+    },
+    "singleface_16": {
+        "img_paths": [
+            "Images/singleface/crop_woman/7.jpg"
+        ],
+        "prompt": "The video features a woman standing outdoors in a serene, natural setting. She is leaning against a tall, white column that is part of a larger structure, possibly a gazebo or pavilion. The woman has long blonde hair and is wearing a light-colored, long dress with a delicate pattern. Her arms are crossed, and she appears to be posing for the camera. The background is lush with greenery, including trees and bushes, suggesting that the location is a park or garden. The lighting is natural, indicating that the video was shot during the day. The overall atmosphere of the video is calm and peaceful, with the woman appearing relaxed and content in her surroundings.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_17": {
+        "img_paths": [
+            "Images/singleface/crop_woman/6.jpg"
+        ],
+        "prompt": "The video features a young woman with long blonde hair standing in front of a lush, green bush adorned with white flowers. She is wearing a black top and appears to be enjoying the natural surroundings. The woman is seen smiling and looking at the camera while gently touching the flowers on the bush. She then bends down slightly and smells one of the flowers, taking in its fragrance. The scene is serene and peaceful, with the woman appearing content and at ease in the beautiful environment. The background consists of more greenery and additional white flowers, creating a picturesque setting. The woman's interaction with the flowers suggests a connection to nature and an appreciation for its beauty. Overall, the video captures a moment of tranquility and natural beauty, with the woman as the central figure.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_18": {
+        "img_paths": [
+            "Images/singleface/crop_woman/9.jpg"
+        ],
+        "prompt": "The video features a woman standing in front of a large screen displaying the words \"\"Tech Minute\"\" and the logo for CNET. She is wearing a purple top and appears to be presenting or speaking about technology-related topics. The background includes a cityscape with tall buildings, suggesting an urban setting. The woman seems to be engaged in a discussion or providing information on technology news or trends. The overall atmosphere is professional and informative, likely aimed at educating viewers about the latest developments in the tech industry.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_19": {
+        "img_paths": [
+            "Images/singleface/crop_woman/4.jpg"
+        ],
+        "prompt": "The video depicts a young woman sitting at a wooden desk, deeply engrossed in her work. She is wearing glasses and has long hair that falls over her shoulders. The woman appears to be focused on a document or piece of paper in front of her, as she writes with a pen. Her posture suggests concentration and determination. The desk is cluttered with numerous stacks of papers and documents, indicating a busy and possibly overwhelming workload. The lighting in the room is dim, casting shadows and creating a somewhat somber atmosphere. The woman's expression is one of intense focus, with her hand resting on her chin, suggesting deep thought or contemplation. The overall scene conveys a sense of hard work and dedication, highlighting the challenges faced by individuals in managing their tasks and responsibilities. The presence of the large piles of paperwork emphasizes the volume of work that needs to be completed, adding to the pressure and stress associated with such tasks.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_20": {
+        "img_paths": [
+            "Images/singleface/crop_woman/13.jpg"
+        ],
+        "prompt": "The video depicts a woman sitting at an office desk, engaged in her work. she is dressed in a formal suit and appears to be focused on her computer screen. The office environment is well-organized, with shelves filled with binders and other office supplies neatly arranged. The woman is holding a red cup, possibly containing a beverage, which she drinks from before setting it down on the desk. she then proceeds to type on the keyboard, indicating that she is working on something on her computer. The overall atmosphere of the video suggests a professional setting where the woman is diligently working on her tasks.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_21": {
+        "img_paths": [
+            "Images/singleface/crop_woman/5.jpg"
+        ],
+        "prompt": "The video features a woman with blonde hair standing on a beach near the water's edge. She is wearing a black swimsuit and appears to be enjoying her time by the sea. The sky above is clear with some clouds, and the ocean waves gently lap against the shore. The woman seems to be holding something white in her hand, possibly a piece of driftwood or a small object found on the beach. The overall atmosphere of the video is serene and relaxing, capturing the beauty of nature and the simple pleasure of being by the ocean.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_22": {
+        "img_paths": [
+            "Images/singleface/crop_woman/11.jpg"
+        ],
+        "prompt": "The video features a woman with blonde hair, wearing a blue tank top and holding a pink tank top on a hanger. She appears to be in a clothing store or a similar retail environment, as there are racks of clothes visible in the background. The woman is speaking to the camera, possibly providing a review or discussing the tank top she is holding. She has colorful bracelets on her wrist and is wearing a necklace with multiple beads. Her expression suggests she is engaged in a conversation or presentation. The setting seems to be indoors, with artificial lighting illuminating the scene.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_23": {
+        "img_paths": [
+            "Images/singleface/crop_woman/14.jpg"
+        ],
+        "prompt": "A woman with an anticipatory smile, her eyes twinkling with excitement as she holds a camera, poised to capture a perfect moment. Her face is animated with enthusiasm; her lips slightly parted as she concentrates on framing the shot. The scene is set in a picturesque landscape, perhaps a mountain range in the background with lush greenery and the golden glow of the sunset. The shot captures her from head to toe, highlighting her engaged stance and the natural beauty surrounding her.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_24": {
+        "img_paths": [
+            "Images/singleface/crop_woman/2.jpg"
+        ],
+        "prompt": "A woman wearing a colorful scarf and cozy sweater, her eyes sparkling with a hint of wonder as she looks around at the falling leaves. Her lips curl into a slight, content smile, adding a touch of warmth to the cool air. Golden and orange leaves cascade softly around her, with the trees forming a vibrant canopy overhead. The shot is captured from the waist up, showcasing her relaxed stance and the intricate patterns of her scarf as they complement the autumn backdrop.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_25": {
+        "img_paths": [
+            "Images/singleface/crop_woman/3.jpg"
+        ],
+        "prompt": "The video features a woman dressed as a mermaid, swimming underwater. She is wearing a silver tail and a matching top, which is adorned with colorful patterns. The woman has long, wavy hair that flows freely underwater. The water around her is clear and blue, with sunlight filtering through the surface, creating a serene and magical atmosphere. The woman appears to be enjoying her time underwater, moving gracefully and exploring her surroundings. The video captures the beauty and wonder of the underwater world, highlighting the enchanting nature of mermaids.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_26": {
+        "img_paths": [
+            "Images/singleface/crop_woman/15.jpg"
+        ],
+        "prompt": "A woman adorned with a delicate flower crown, is standing amidst a field of gently swaying wildflowers. Her eyes sparkle with a serene gaze, and a faint smile graces her lips, suggesting a moment of peaceful contentment. The shot is framed from the waist up, highlighting the gentle breeze lightly tousling her hair. The background reveals an expansive meadow under a bright blue sky, capturing the tranquility of a sunny afternoon.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_27": {
+        "img_paths": [
+            "Images/singleface/crop_woman/8.jpg"
+        ],
+        "prompt": "The video features a woman dressed as a mermaid, swimming underwater. She is wearing a silver tail and a matching top, which is adorned with colorful patterns. The woman has long, wavy hair that flows freely underwater. The water around her is clear and blue, with sunlight filtering through the surface, creating a serene and magical atmosphere. The woman appears to be enjoying her time underwater, moving gracefully and exploring her surroundings. The video captures the beauty and wonder of the underwater world, highlighting the enchanting nature of mermaids.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_28": {
+        "img_paths": [
+            "Images/singleface/crop_woman/10.jpg"
+        ],
+        "prompt": "The video features a woman walking down a city street at night, engrossed in her smartphone. she is dressed in a formal suit and tie, suggesting she might be a professional or businessman. The street is illuminated with various neon lights and signs, creating a vibrant and lively atmosphere. The woman appears to be focused on her phone, possibly texting or browsing, as she walks. The background shows tall buildings with lit-up windows, indicating that this scene takes place in an urban setting. The overall mood of the video is one of modernity and connectivity, with the woman's attire and the use of technology highlighting the blend of traditional and contemporary elements in the cityscape.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_29": {
+        "img_paths": [
+            "Images/singleface/crop_woman/1.jpg"
+        ],
+        "prompt": "The video features a woman standing outdoors in a serene, natural setting. She is leaning against a tall, white column that is part of a larger structure, possibly a gazebo or pavilion. The woman has long blonde hair and is wearing a light-colored, long dress with a delicate pattern. Her arms are crossed, and she appears to be posing for the camera. The background is lush with greenery, including trees and bushes, suggesting that the location is a park or garden. The lighting is natural, indicating that the video was shot during the day. The overall atmosphere of the video is calm and peaceful, with the woman appearing relaxed and content in her surroundings.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    },
+    "singleface_30": {
+        "img_paths": [
+            "Images/singleface/crop_woman/12.jpg"
+        ],
+        "prompt": "The video features a woman in exquisite hybrid armor adorned with iridescent gemstones, standing amidst gently falling cherry blossoms. Her piercing yet serene gaze hints at quiet determination, as a breeze catches a loose strand of her hair. She stands in a tranquil courtyard framed by moss-covered stone walls and wooden arches, with blossoms casting soft shadows on the ground. The petals swirl around her, adding a dreamlike quality, while the blurred backdrop emphasizes her poised figure. The scene conveys elegance, strength, and tranquil readiness, capturing a moment of peace before an upcoming challenge.",
+        "synthesis_flag": "Wrong",
+        "class_label": [
+            "Woman"
+        ]
+    }
+}
