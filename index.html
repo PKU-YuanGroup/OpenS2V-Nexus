@@ -1,0 +1,2964 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description"
+    content="OpenS2V-Nexus: A Detailed Benchmark and Million-Scale Dataset for Subject-to-Video Generation">
+  <meta name="keywords" content="Evaluation, Benchmark, Prompts, Dataset, Video Generation, Text-to-Video, AIGC">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>OpenS2V-Nexus: A Detailed Benchmark and Million-Scale Dataset for Subject-to-Video Generation</title>
+
+  <!--   Global site tag (gtag.js) - Google Analytics-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5ZVQZ7NHC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y5ZVQZ7NHC');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <!-- title -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+
+            <!-- <span style="color:#B9770E; font-weight: bold; font-style: italic">
+              OpenS2V-Nexus
+            </span> -->
+            <div style='display: flex; align-items: center; justify-content: center; text-align: center;'>
+              <img src="https://www.pnglog.com/6xm07l.png" style='width: 300px; height: auto; margin-right: 10px;' />
+            </div>
+            <h1 class="title is-1 publication-title">
+              A Detailed Benchmark and Million-Scale Dataset for Subject-to-Video Generation
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <div class="author-row">
+                <span class="author-block">
+                  <a href="https://shyuanbest.github.io/">Shenghai Yuan</a><sup>1,3,*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://github.com/pkuhxy">Xianyi He</a><sup>1,3,*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://arxiv.org/abs/2503.10391">Yufan Deng</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=2Vh4KeAAAAAJ&hl=zh-CN&oi=sra">Yang
+                    Ye</a><sup>1,3</sup>,</span>
+                <span class="author-block">
+                  <a href="https://infaaa.github.io/">Jinfa Huang</a><sup>2</sup>,</span>
+              </div>
+              <div class="author-row">
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?hl=zh-CN&user=GCOVDKoAAAAJ">Bin
+                    Lin</a><sup>1,3</sup>,</span>
+                <span class="author-block">
+                  <a href="http://chongyangma.com/">Chongyang Ma</a><sup></sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a><sup>2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://yuanli2333.github.io/">Li Yuan</a><sup>1,†</sup></span>
+
+              </div>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Peking University,</span>
+              <span class="author-block"><sup>2</sup>University of Rochester,</span>
+              <span class="author-block"><sup>3</sup>Rabbitpre AI,</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <span class="link-block">
+                  <a href="https://arxiv.org" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/PKU-YuanGroup/OpenS2V-Nexus" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </a>
+                </span>
+                <!-- Huggingface Demo Link. -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="static/images/hf-logo.svg" style="display:block;width:330px;height:240px" />
+                    </span>
+                    <span>LeaderBoard</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/BestWishYsh/OpenS2V-5M" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="static/images/hf-logo.svg" style="display:block;width:330px;height:240px" />
+                    </span>
+                    <span>OpenS2V-5M</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/BestWishYsh/OpenS2V-Eval" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="static/images/hf-logo.svg" style="display:block;width:330px;height:240px" />
+                    </span>
+                    <span>OpenS2V-Eval</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">OpenS2V-Nexus</span> deliver a robust infrastructure to accelerate S2V !
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .image-container img {
+      width: 140px;
+      /* Fixed width for all images */
+      height: 140px;
+      /* Fixed height for all images */
+      object-fit: cover;
+      /* Ensures the image covers the box, may clip some parts */
+    }
+
+    .two-image-container img {
+      width: 540px;
+      /* Fixed width for all images */
+      height: 100px;
+      /* Fixed height for all images */
+      object-fit: cover;
+      /* Ensures the image covers the box, may clip some parts */
+    }
+
+    .three-image-container img {
+      width: 300px;
+      /* Fixed width for all images */
+      height: 100px;
+      /* Fixed height for all images */
+      object-fit: cover;
+      /* Ensures the image covers the box, may clip some parts */
+    }
+
+    .text-cell {
+      width: 140px;
+      /* Allows the text cell to adjust based on content */
+      text-align: center;
+    }
+
+    .square-image {
+      width: 200px;
+      /* Set both width and height to the same value */
+      height: 230px;
+      object-fit: cover;
+      /* This will make sure the images cover the square area without distorting their aspect ratios */
+    }
+
+    table {
+      border-collapse: collapse;
+      /* Removes the space between borders */
+    }
+
+    table,
+    th,
+    td {
+      border: 1.5px solid rgb(230, 230, 230);
+    }
+
+    th,
+    td {
+      text-align: center;
+    }
+  </style>
+
+  <section>
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Subject-to-Video (S2V) generation aims to create videos that faithfully incorporate reference content,
+              providing enhanced flexibility in the production of videos.
+              To establish the infrastructure for S2V generation, we propose <b>OpenS2V-Nexus</b>, consisting of (i)
+              <b>OpenS2V-Eval</b>, a fine-grained benchmark,
+              and (ii) <b>OpenS2V-5M</b>, a million-scale dataset. In contrast to existing S2V benchmarks inherited from
+              VBench that focus on global and
+              coarse-grained assessment of generated videos, <i>OpenS2V-Eval</i> focuses on the model's ability to
+              generate subject-consistent videos with natural subject appearance
+              and identity fidelity. For these purposes, <i>OpenS2V-Eval</i> introduces 180 prompts from seven major
+              categories of S2V, which incorporate both real and synthetic test data.
+              Furthermore, to accurately align human preferences with S2V benchmarks, we propose three automatic
+              metrics, NexusScore, NaturalScore and GmeScore,
+              to separately quantify subject consistency, naturalness, and text relevance in generated videos. Building
+              on this, we conduct a comprehensive evaluation of 11 representative S2V models,
+              highlighting their strengths and weaknesses across different content. Moreover, we create the first
+              open-source large-scale S2V generation dataset <i>OpenS2V-5M</i>,
+              which consists of five million high-quality 720P subject-text-video triplets. Specifically, we ensure
+              subject-information diversity in our dataset by
+              (1) segmenting subjects and building pairing information via cross-video associations and (2) prompting
+              GPT-Image-1 on raw frames to synthesize multi-view representations.
+              Through <b>OpenS2V-Nexus</b>, we deliver a robust infrastructure to accelerate future S2V generation
+              research.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <!-- Eval Type -->
+  <section class="section" style="margin-top:-10px; margin-bottom:-100px;">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="section-title">
+            <h2 class="title is-3 is-centered">Seven Categories of Subject-to-Video Generation</h2>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-img">
+              <img id="architecture"
+                src="https://github.com/user-attachments/assets/d1cdd8ea-8bac-44eb-a54b-01bfe50887c3"
+                style="width:890px; margin-top:20px;margin-bottom:-10px;" />
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 0;">
+          To construct OpenS2V-Nexus for subject-to-video that incorporates diverse visual concepts, we divide this task
+          into seven categories:
+          ① single-face-to-video,
+          ② single-body-to-video,
+          ③ single-entity-to-video,
+          ④ multi-face-to-video,
+          ⑤ multi-body-to-video,
+          ⑥ multi-entity-to-video, and
+          ⑦ human-entity-to-video.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="margin-top: 40px;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Key Challenges for the S2V Model</h2>
+          <div class="content has-text-justified">
+            <div class="box">
+              <h3 class="title is-5 has-text-left">Challenges 1</h3>
+              <p class="has-text-left" style="font-size: 0.9rem;">
+                <strong>Poor generalization</strong>: These models often perform poorly when encountering subject
+                categories not seen during training. For instance, a model trained exclusively on Western subjects
+                typically performs worse when generating Asian subjects.
+              </p>
+            </div>
+            <div class="box">
+              <h3 class="title is-5 has-text-left">Challenges 2</h3>
+              <p class="has-text-left" style="font-size: 0.9rem;">
+                <strong>Copy-paste issue</strong>: The model tends to directly transfer the pose, lighting, and
+                contours from the reference image to the video, resulting in unnatural outcomes.
+              </p>
+            </div>
+            <div class="box">
+              <h3 class="title is-5 has-text-left">Challenges 3</h3>
+              <p class="has-text-left" style="font-size: 0.9rem;">
+                <strong>Inadequate human fidelity</strong>: Current models often struggle to preserve human
+                identity as effectively as they do non-human entities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regular vs Nexus -->
+  <section class="section" style="margin-top:-40px; margin-bottom:-100px;">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="section-title">
+            <h2 class="title is-3 is-centered">Regular Data vs Nexus Data</h2>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-img">
+              <img id="architecture"
+                src="https://github.com/user-attachments/assets/86387045-f07b-422c-9f26-c2afc6368e72"
+                style="width:890px; margin-top:20px;margin-bottom:-10px;" />
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 0;">
+          Unlike previous methods that rely solely on regular subject-text-video triples—where subject images are
+          segmented from training frames,
+          potentially causing the model to learn shortcuts rather than intrinsic knowledge—we enrich it with Nexus Data,
+          through <b>(1)</b> building
+          pairing information via cross-video associations and <b>(2)</b> prompting GPT-Image-1 on raw frames to
+          synthesize multi-view representations,
+          to address the three core challenges mentioned above at the data level.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eval Pipeline -->
+  <section class="section" style="margin-top:-40px; margin-bottom:-100px;">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="section-title">
+            <h2 class="title is-3 is-centered">OpenS2V-Eval Pipeline</h2>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-img">
+              <img id="architecture"
+                src="https://github.com/user-attachments/assets/40470244-4712-42ee-917d-9dfdd7dcaecb"
+                style="width:890px; margin-top:20px;margin-bottom:-10px;" />
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 0;">
+          <strong>(Left)</strong> Our benchmark includes not only real subject images but also synthetic images
+          constructed through GPT-Image-1 allowing for a more comprehensive evaluation.
+          <strong>(Right)</strong> The metrics are tailored for subject-to-video generation, evaluating not only S2V
+          characteristics (<em>e.g.</em>, consistency) but also basic video elements (<em>e.g.</em>, motion).
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Eval Results -->
+  <section class="section" style="margin-top:-40px; margin-bottom:-100px;">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="section-title">
+            <h2 class="title is-3 is-centered">OpenS2V-Eval Results</h2>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-img">
+              <img id="architecture"
+                src="https://github.com/user-attachments/assets/2ea5a89f-85f3-4060-98fb-22bdad50c374"
+                style="width:890px; margin-top:20px;margin-bottom:-10px;" />
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 0;">
+          We visualize the evaluation results of various Subject-to-Video generation models across <i>Open-Domain</i>,
+          <i>Human-Domain</i> and <i>Single-Object</i>. The values have been normalized for better chart readability.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LeaderBoard -->
+  <section class="hero is-light" style="margin-top:97px; margin-bottom:0px;">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <div class="section-title">
+          <h2 class="title is-3 is-centered">Leaderboard</h2>
+        </div> -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <iframe src="https://bestwishysh-opens2v-eval.hf.space" frameborder="0" width="1400" height="700"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="columns is-centered has-text-centered" style="margin-top: 80px;">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Open-Domain Evaluation Examples</h2>
+    </div>
+  </div>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="carousel-container-OpenDomain" class="carousel-container">
+
+          <!-- faceobj_2 -->
+          <div class="carousel-item-OpenDomain">
+
+            <div class="top-content">
+              <div class="three-image-container">
+                <img src="https://github.com/user-attachments/assets/b73b00fa-dff1-4c88-8e93-b5d84a428068"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">A man joyfully playing with his dog on a sunny beach.</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/9b437db2-ce97-468a-8eae-393eb7c0191a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/cc1bc622-4250-4099-ad7a-dc19a6e28455"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/347a2941-a543-4d17-9475-85e7aa2eaeeb"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/3f919509-2d66-4a7a-b575-743d153b5cb1"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/f24461bb-9f2f-427c-a071-4a19e2e77b01"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/078c1690-8674-4739-ab03-6553181079b1"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/04e0f745-e76d-4ba6-9931-8a07fbd4d4de"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/7988e21e-f4e5-4db4-a4ca-17e8b6d26d84"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- humanobj_4 -->
+
+          <div class="carousel-item-OpenDomain">
+
+
+            <div class="top-content">
+              <div class="three-image-container">
+                <img src="https://github.com/user-attachments/assets/89c26f3a-4d01-4381-b13a-5b6f04f39fa4"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">A man sitting on the grass in the park, a bird flying around him.</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/2ddc8f20-3721-406a-a168-a91035e8cc48"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/90d5001f-b880-4497-b070-ee85bef1d757"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/378544cc-52a6-4b44-9a75-584444d340ce"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/5987d06d-d099-4c6e-ac78-f0c0b066bf0d"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/c94676a3-bbce-44d7-83b3-828121d02bac"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/80bd3b8e-9211-41c9-a002-0cb3aca5bff1"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/0a9c5fe0-6cfe-48dc-8274-2a10328f4cd6"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/1ad34e53-71ea-4147-9575-1279bc0d477d"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- multiface_14 -->
+
+          <div class="carousel-item-OpenDomain">
+
+
+            <div class="top-content">
+              <div class="two-image-container">
+                <img src="https://github.com/user-attachments/assets/3775b327-b51a-4d91-9ffa-35560bd1f7d0"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video opens with a serene outdoor scene at 00:00, featuring two
+                  individuals standing in a field of tall grass. The setting is a rural area with a clear sky and a few
+                  scattered trees in the background. The person on the left, wearing a white shirt ...</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/b88b0dba-7fde-4ded-b347-075c2043b9b4"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/26c2d903-a87f-406a-b2c3-31d188f54f84"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/9756c736-45e8-45d7-9411-4962cfbb718a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/26fbde9e-d065-4e6b-aa2e-43efe9a6a2b1"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/d797cab5-fa95-4193-b5ac-1694966741f0"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/6239d99f-a2f2-44c1-9441-8ae471792a6d"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/098081e9-4031-40dc-8296-85deca633467"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/123bc8de-86b0-4e3a-af52-b102c78f5833"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- multiobject_13 -->
+          <div class="carousel-item-OpenDomain">
+
+
+            <div class="top-content">
+              <div class="two-image-container">
+                <img src="https://github.com/user-attachments/assets/54c562a2-d81d-4824-80db-6a6f6a6c51ce"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video showcases a serene indoor setting with a wooden table in the
+                  foreground, adorned with two white cushions, a white teapot, two white cups, and a vase with yellow
+                  ...</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video class="vidu-video" autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/1c7e0841-7249-4850-b5b8-1e4177423d43"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/54d69d9e-eb43-4842-a609-bb737354b272"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/d35b5fe1-68f5-463a-9a04-8e8fc96d88c0"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/40ec823d-2de6-4c1c-8f9d-56e8901538d0"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/76df3215-c213-4f71-9eab-c16bf0f87e60"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/8ced6880-5724-40c4-96ea-89970a11d9d9"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/600c4054-3945-448a-a6a4-c10aecedb2d1"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/922f8144-8cb2-4f44-ae37-312e1d8ebc78"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- multiobject_26 -->
+          <div class="carousel-item-OpenDomain">
+
+
+            <div class="top-content">
+              <div class="two-image-container">
+                <img src="https://github.com/user-attachments/assets/cd95f842-de54-4ee3-891a-93068907049f"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video captures a serene outdoor scene featuring two squirrels
+                  interacting with a wooden crate. Initially, one squirrel is seen standing on the edge of the crate,
+                  while ...</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/08456886-1fe9-47ef-9579-8735fecb8a55"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/bb26f903-c44c-4f1a-8461-7e117b2ca54a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/fd776f70-784b-42c0-816e-ae2fb063f7d3"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/84297975-6a48-46e6-9c60-a3184f240293"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/bccf3749-9da8-4bf2-91f1-7f5e81b686fd"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/edd45bf2-bf37-46fa-9d7e-38ced9158959"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/cd4e83de-9114-47c0-9e80-ea177a9ff7a9"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/f388c2dc-3a7c-4fd4-9310-64673563817a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="pagination-dots-OpenDomain" class="pagination-dots-OpenDomain"></div>
+        <button class="layout-nav-OpenDomain prev" onclick="OpenDomainprevSlide()">&#10094;</button>
+        <button class="layout-nav-OpenDomain next" onclick="OpenDomainnextSlide()">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="columns is-centered has-text-centered" style="margin-top: 80px;">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Human-Domain Evaluation Examples</h2>
+    </div>
+  </div>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="carousel-container-HumanDomain" class="carousel-container">
+
+
+          <!-- singleface_2-1 -->
+          <div class="carousel-item-HumanDomain">
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/315ffe7f-6261-491c-89d6-bf442f6eeea5"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video features a man walking down a city street at night, engrossed
+                  in his smartphone. He is dressed in a formal suit and tie, suggesting he might.....</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/c1a0be8c-dc48-400d-94ea-de259c0eb183"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Concat-ID</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/3245404c-d27e-47ca-ac53-0e508d4b3fe5"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">ConsisID</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/c716204f-5065-48dc-80e7-86b18d523429"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">EchoVideo</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/c2abb8ca-940d-4688-9060-b811225e84f4"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">FantasyID</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/4cba6b56-5649-4e79-99bc-a6f737091b46"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Hailuo</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/fcde9554-1214-458b-b8f4-07e687642937"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">HunyuanCustom</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/5d41a058-a425-4c97-8440-7de76ba24bcc"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/1e467441-c531-4c5e-8c27-9364fe4d0bda"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- singleface_2-2 -->
+          <div class="carousel-item-HumanDomain">
+
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/315ffe7f-6261-491c-89d6-bf442f6eeea5"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video features a man walking down a city street at night, engrossed
+                  in his smartphone. He is dressed in a formal suit and tie, suggesting he might.....</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/b0712a8b-c6f7-465c-8c33-4583e1247268"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/7d677c3e-05dc-40e1-922d-879cd2d4efea"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/de1c366b-cf70-4200-8e35-4cf6e0b23991"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/908f64ce-ded6-4751-8e29-fdd0c8a60212"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/6bff94d1-cbfc-43ca-97cc-94046c96733e"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/0e3fa8a1-c05b-4033-beb9-c9ec7ad0fa65"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- singleface_3-1 -->
+          <div class="carousel-item-HumanDomain">
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/15ae40dd-9000-4ce4-9476-bd3bf5387ea7"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video features a man sitting in the driver's seat of a car. he is
+                  wearing glasses and a dark-colored dress, and his hair is neatly styled. The interior of the car ...
+                </p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/f9ddd5a3-57ae-447b-a68c-b47ddffae589"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Concat-ID</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/dff0ce5c-a2b0-4653-be33-ecf40a4767ed"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">ConsisID</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/c367b600-462d-4b8f-8c9c-cc57e45d4320"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">EchoVideo</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/db7dbba6-0854-4b0c-8ac5-e99013522e53"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">FantasyID</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/bf197dae-b563-42b7-969f-ef5b439d08cb"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Hailuo</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/3dfd829c-bcfc-430e-b936-95b77850cce2"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">HunyuanCustom</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/6cfd731c-9e64-4946-9f8b-a14ed9fc6c3b"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/1e2524ae-336b-4989-8e5c-a9b27ea33ac6"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- singleface_3-2 -->
+          <div class="carousel-item-HumanDomain">
+
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/15ae40dd-9000-4ce4-9476-bd3bf5387ea7"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video features a man sitting in the driver's seat of a car. he is
+                  wearing glasses and a dark-colored dress, and his hair is neatly styled. The interior of the car ...
+                </p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/7cee121f-c2d1-4512-bc88-281c073e463e"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/7fa38ed5-0779-4d6c-9f5e-e742436c966c"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/171d82a4-b4cd-4c94-a03a-36e6657d03c4"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/3aa843ae-8ac9-4a2c-9451-3a0e3c98e307"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/34a963fc-0cb1-4389-ae94-69d52043109c"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/d74bfbfa-387b-49e4-9d0c-78d1186b31d9"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- singleface_12-1 -->
+          <div class="carousel-item-HumanDomain">
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/eff82d24-f610-47c0-ba7e-536ae9ccf1ca"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video features a young man walking through a park during sunset. he
+                  is wearing a sleeveless top with a geometric pattern and denim shorts. The man ...</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/11ca5ab8-65fb-45ce-849f-5b29762bcb78"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Concat-ID</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/0571fc8c-7cde-42d6-839f-1a2c7517b7ce"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">ConsisID</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/f47ce098-373f-4499-93ac-1ad3ca8c3f74"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">EchoVideo</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/27ff9c41-03a7-4829-bf2d-8cd500c39e63"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">FantasyID</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/30ba49f0-192a-43b1-90ec-d3c18b7121bd"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Hailuo</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/04df77f4-d0d1-4daa-8ee2-e1593299cfda"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">HunyuanCustom</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/a2f146d6-c659-40a2-b20d-51842c1e1f32"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/0365bb75-5e72-4266-83e7-ba39c5b9631f"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- singleface_12-2 -->
+          <div class="carousel-item-HumanDomain">
+
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/eff82d24-f610-47c0-ba7e-536ae9ccf1ca"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video features a young man walking through a park during sunset. he
+                  is wearing a sleeveless top with a geometric pattern and denim shorts. The man ...</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/3ef0f5fc-a754-4198-9847-ddf54acdc032"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/532562d5-4407-4ff2-861b-ce5b2eda319f"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/28ab3974-4766-444e-bc72-00c7bc29b6e2"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/567165aa-1264-4c19-8008-aaa53ba690c3"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/90ca2be7-49da-45fc-8eab-21d419700364"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/c69d6aaf-5203-4eb5-a2f4-31fbc21697df"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- singleface_30-1 -->
+          <div class="carousel-item-HumanDomain">
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/ec1e54c7-9d55-437a-9152-24d241664032"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video features a woman in exquisite hybrid armor adorned with
+                  iridescent gemstones, standing amidst gently falling cherry blossoms. Her piercing yet serene ...
+                </p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/14e3fd61-36d5-409d-b2bb-49261e3c6c22"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Concat-ID</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/84cba586-c697-4fb4-92d3-1d66e653dd83"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">ConsisID</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/c1a5ed8b-ceba-480b-8373-2566f09ee8f8"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">EchoVideo</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/1af7e0ca-c961-46c2-9464-f848e5d7475a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">FantasyID</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/6c2109a0-c92e-4e65-8d0c-06b55b85c306"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Hailuo</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/9975e016-88c6-410c-ba40-6700a95df919"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">HunyuanCustom</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/12902fe8-4aa5-474b-afbc-fae4bbdb82ae"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/f3facf11-9634-4aae-9eb1-1ff8ab2c1146"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- singleface_30-2 -->
+          <div class="carousel-item-HumanDomain">
+
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/ec1e54c7-9d55-437a-9152-24d241664032"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video features a woman in exquisite hybrid armor adorned with
+                  iridescent gemstones, standing amidst gently falling cherry blossoms. Her piercing yet serene ...
+                </p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/dc9657c3-f743-4fe0-85c4-754ee0fb872a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/21e04321-85c4-47cb-b211-cad5dea52a6a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/a8b3402e-4954-4c3f-a4ba-b9d6bfdcb775"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/c5ec058e-deab-47e9-9737-0bd8f488a06e"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/db2722db-b07d-48cd-9a6c-44e333b36110"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/4ceebf5b-33d7-4808-b34a-392bf1d6478e"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+        <div id="pagination-dots-HumanDomain" class="pagination-dots-HumanDomain"></div>
+        <button class="layout-nav-HumanDomain prev" onclick="HumanDomainprevSlide()">&#10094;</button>
+        <button class="layout-nav-HumanDomain next" onclick="HumanDomainnextSlide()">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="columns is-centered has-text-centered" style="margin-top: 80px;">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Single-Domain Evaluation Examples</h2>
+    </div>
+  </div>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="carousel-container-Single" class="carousel-container">
+
+
+
+          <!-- singleface_21 -->
+          <div class="carousel-item-Single">
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/c44af482-17d6-4a75-95ea-f8d782946f09"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video features a woman with blonde hair standing on a beach near the
+                  water's edge. She is wearing a black swimsuit and appears to be enjoying her time ...</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/99af8342-f2ad-4bc5-86c3-8e4850365204"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/8c4e7f1c-85d3-4e0e-ab70-9440391ac6be"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/df4d684c-0fed-4576-bad6-849536b77683"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/65089a49-cc55-4d7f-9162-7f72eb64fe23"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/e74f8da8-df47-416f-9120-4e038e358f32"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/7d6da49c-ed22-4026-ba34-826ee2bb567a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/67ebd0db-b885-4319-bc34-f968069ca680"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/6ece4385-274f-4ac1-ba3c-55580c6adf6a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- singlehuman_3 -->
+          <div class="carousel-item-Single">
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/53bbb30b-9f98-470c-a284-4f202a60edb5"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video features a man standing at an easel, focused intently as his
+                  brush dances across the canvas. His expression is one of deep concentration, with a hint of ...</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/55830a06-b479-40ad-a835-986d6e5cfbeb"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/44ff5bab-88d5-4e84-8cd3-96d079c49242"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/83c90e46-9517-4eec-b22e-c3f0a8608dee"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/c2463b4d-0794-426e-8d31-5c4708fcb714"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/69489d3f-bdb4-4c4c-9d30-bdbe7d60b339"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/71e2f534-1501-4373-9e44-2be9c6dd2359"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/d3449d8a-26bb-49d3-aaff-73aafa12500b"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/06efc864-ecae-4070-a9c8-b6c2c65ae008"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- singlehuman_25 -->
+          <div class="carousel-item-Single">
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/8929f92c-bf8d-42ec-bd56-f76d0998044b"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">In the video, a girl is sitting on a grassy hill, overlooking a vast
+                  field with wildflowers in full bloom. She is wearing a casual t-shirt and denim shorts, with a ...
+                </p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/a950a5a5-76d8-43cf-845b-3e4a2438c1ff"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/3c8b4905-e8dd-493b-a85c-6a838409decc"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/5d952cfb-bc0d-4dec-b8bf-6501829310f9"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/3dbbe34e-bb5f-45b5-a974-041e1bf71eb6"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/ec355924-7315-481d-947d-e9b427bda62f"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/d66b4151-dfcc-41d8-82a8-74d30579c792"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/7641b532-4e21-4572-ba4e-b3cd55f524b1"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/d1512aae-4109-4e6e-b0ff-95a1ea21cb1a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Singleobj_1 -->
+          <div class="carousel-item-Single">
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/11fafa0d-06bc-4c29-98b4-b7e507b5248c"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video begins with a close-up of a teapot sitting on a cozy kitchen
+                  table, steam rising gently from its spout. The camera zooms in to capture the swirling ...</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/d8b95208-933c-4940-b731-8c431ee4ef2d"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/1688a780-9c0e-4552-b39f-308ae0cae9cc"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/4420ee67-a2fc-4b3d-b520-6d3341dc6c5c"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/dfba5713-37ed-4f0d-80dd-d8ab45c1ce7a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/ef085a45-fb4d-4679-8d2e-c865471069cf"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/81a5b14a-561e-4411-9b1e-85344a4a5e19"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/59864f86-845a-49f8-a6d4-06a2afdfae62"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/12056748-fc98-4181-be9d-38367684e64a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- singleobj_6 -->
+          <div class="carousel-item-Single">
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/cd09ad20-51f4-47b1-910c-443f7e78c3cf"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video begins with a close-up of a t-shirt laid out on a sunny rock,
+                  the fabric gently catching the light of the sun. The camera zooms in to capture the ...</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/5473304f-8544-47b4-9fa6-7e0544534a01"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/b4a152e7-2c8e-4b1b-b9e4-00e390de9c27"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/92427cfa-d5de-4108-b047-cef01144e36f"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/b8f05a0f-d3ac-42dd-9cd9-c31a97a5ab79"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/9514c90c-67a8-41c0-98e6-6ea45dcce4a6"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/e8711f55-7ad7-49ff-aead-462e36b91c3a"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/503013fa-4abb-41ae-ba77-9ee45be43964"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/0e90590f-46f1-4aae-94f7-11e3f79a4cc5"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- singleobj_21 -->
+          <div class="carousel-item-Single">
+
+            <div class="top-content">
+              <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/70d8f1be-9ef4-4676-aa0e-9cb064945b07"
+                  alt="Overview Image" class="overview-image">
+              </div>
+              <div class="description-container">
+                <p class="overview-description">The video begins with a close-up of a vintage television resting on a
+                  classic wooden stand in a cozy living room. The camera zooms in to highlight the television ...</p>
+              </div>
+            </div>
+
+            <div class="six-videos">
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/ffa014b5-d1a5-498a-a49e-12328f5837b8"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Kling1.6</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/ed63db02-2803-4faa-8c23-f07a223c9a02"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Phantom-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/ca728862-2be1-4bc9-abf6-63532c36246b"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Pika2.1</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/7bf8473a-7f65-400e-88d7-0adab689ec98"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Skyreels-A2-P14B</p>
+                </div>
+              </div>
+
+
+              <div class="video-row">
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/85d328ce-a442-4c85-ad16-a18173d848d0"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-P1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/b4d74e89-7eae-489c-aef6-2032047c0d39"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-1.3B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/fa6423b8-6f9b-4ec2-a0fc-4c8acc67157b"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">VACE-14B</p>
+                </div>
+
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/7da2bbf0-a6bd-45d6-8697-cf3c31871850"
+                      type="video/mp4">
+                  </video>
+                  <p class="bottom-text">Vidu2.0</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div id="pagination-dots-Single" class="pagination-dots-Single"></div>
+        <button class="layout-nav-Single prev" onclick="SingleprevSlide()">&#10094;</button>
+        <button class="layout-nav-Single next" onclick="SinglenextSlide()">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics References -->
+  <div class="columns is-centered has-text-centered" style="margin-top: 85px; margin-bottom:-100px;">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Automatic Metrics References</h2>
+    </div>
+  </div>
+
+  <section class="section" style="margin-top:0px; margin-bottom:0px;">
+    <div class="hero-body">
+      <div class="container">
+
+        <div id="new-carousel-container" class="carousel-container">
+
+          <div class="new-layout-item">
+            <div class="six-videos">
+              <div class="video-row">
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/5e27eb8c-9bf4-4755-8185-216af88eb579"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video showcases a person engaged in work with a focus on two computer
+                    monitors.</p> -->
+                  <b>AestheticsScore ≈ 15.07%</b>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/993e4022-0ff2-4287-86b2-22772a3133ad"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video features a man sitting at a rustic wooden table in a café, sipping
+                    his coffee.
+                  </p> -->
+                  <b>AestheticsScore ≈ 47.16%</b>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/935a4d2c-855c-4cd2-aa04-74a419191568"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video begins with a close-up of a boat anchored near a rocky coastline,
+                    bobbing on the calm water.
+                  </p> -->
+                  <b>AestheticsScore ≈ 73.23%</b>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-layout-item">
+            <div class="six-videos">
+              <div class="video-row">
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/02d9276f-6916-495d-a634-5e352cbe0d90"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video showcases scene set on a windowsill, featuring two potted plants with
+                    lush green foliage.
+                  </p> -->
+                  <b>MotionScore ≈ 2.4%</b>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/020e54e0-e70f-48fb-b60b-8941d1356a79"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video begins with a close-up of a boat anchored near a rocky coastline,
+                    bobbing on the calm water.
+                  </p> -->
+                  <b>MotionScore ≈ 55.19%</b>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/8e92c1bd-bae7-46e3-a451-f51844567992"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">A man sitting on the grass in a park, while a playful dog strolls around him,
+                    exploring the surroundings.
+                  </p> -->
+                  <b>MotionScore ≈ 100%</b>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-layout-item">
+            <div class="six-videos">
+              <div class="video-row">
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/28769c25-06d6-4ceb-a0b4-67dfb48705c8"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video shows a man sitting on a park bench under a large oak tree, reading a
+                    book. He has a beard and is wearing a casual sweater and jeans.
+                  </p> -->
+                  <b>FaceSim-Cur ≈ 13.07%</b>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/044ea0c7-c0f4-46d5-a594-0aabcaeeb0fe"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video features a man jogging along a grassy path next to a body of water,
+                    likely a lake or river. he is wearing a white sports bra.
+                  </p> -->
+                  <b>FaceSim-Cur ≈ 56.63%</b>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/c55086fa-2bd3-440a-a7ff-8c5582c850e7"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video features a young man who appears to be a content creator or streamer.
+                    he is wearing a green sleeveless top and red headphones.
+                  </p> -->
+                  <b>FaceSim-Cur ≈ 88.53%</b>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-layout-item">
+            <div class="six-videos">
+              <div class="video-row">
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/4b7e2ae2-8ef0-4245-b49a-81437a30d1c9"
+                      type="video/mp4">
+                  </video>
+                  <b>GmeScore ≈ 42.72%</b>
+                  <p class="bottom-text">
+                    A man is watching a bird in the park ...
+                  </p>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/e96c17f7-8d61-4a3d-b03f-a624f33a5487"
+                      type="video/mp4">
+                  </video>
+                  <b>GmeScore ≈ 68.55%</b>
+                  <p class="bottom-text">
+                    The video begins with a rooster and two hens standing on a grassy area in front of a wooden fence.
+                    The rooster, with its vibrant red ...
+                  </p>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/1f77511d-689d-4aae-9c4f-52a27908ceca"
+                      type="video/mp4">
+                  </video>
+                  <b>GmeScore ≈ 76.56%</b>
+                  <p class="bottom-text">
+                    A woman stands on the bridge, wearing a black one-piece swimsuit with the Nike Air logo across the
+                    front. The swimsuit fits snugly ...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-layout-item">
+            <div class="six-videos">
+              <div class="video-row">
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/ba16ddde-2a74-4310-81de-f3658e42818e"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video features a man sitting at a rustic wooden table in a café, sipping
+                    his coffee. He has short black hair and is dressed in a casual button-up shirt.
+                  </p> -->
+                  <b>NexusScore ≈ 10.98%</b>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/dcbadcbc-4459-495b-8b61-a50ceff40803"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video begins with a close-up of a vintage camera resting on a rustic wooden
+                    table, surrounded by old, worn books.
+                  </p> -->
+                  <b>NexusScore ≈ 53.83%</b>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/bec86890-d658-4a85-9f73-22825227b368"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video opens with a close-up of a teddy bear sitting on a park bench,
+                    surrounded by vibrant autumn leaves scattered across the ground.
+                  </p> -->
+                  <b>NexusScore ≈ 99.99%</b>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-layout-item">
+            <div class="six-videos">
+              <div class="video-row">
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/93e3368b-af6b-4fcb-b467-1d04010203fd"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">A man strolling through the park, with a bird gracefully flying around him, -->
+                  <!-- adding a touch of liveliness to the peaceful scene. -->
+                  <!-- </p> -->
+                  <b>NaturalScore ≈ 40.00%</b>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/0929593e-0f42-4174-89e9-2b30a7791567"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video showcases a indoor setting with a wooden table in the foreground, -->
+                  <!-- adorned with two white cushions, a white teapot, two white cups, and a vase. -->
+                  <!-- </p> -->
+                  <b>NaturalScore ≈ 60.00%</b>
+                </div>
+                <div class="video-item">
+                  <video autoplay controls muted loop playsinline>
+                    <source src="https://github.com/user-attachments/assets/409363bb-dcf5-4299-954a-09cdef0821a8"
+                      type="video/mp4">
+                  </video>
+                  <!-- <p class="bottom-text">The video begins with a black and white dog standing in a room with a wooden -->
+                  <!-- floor, facing a white bowl. -->
+                  <!-- </p> -->
+                  <b>NaturalScore ≈ 80.00%</b>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="new-pagination-dots" class="pagination-dots"></div>
+        <button class="new-layout-nav prev" onclick="prevNewSlide()">&#10094;</button>
+        <button class="new-layout-nav next" onclick="nextNewSlide()">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const OpenDomainitems = document.querySelectorAll('.carousel-item-OpenDomain');
+      const OpenDomainpaginationDotsContainer = document.getElementById('pagination-dots-OpenDomain');
+
+
+      OpenDomainitems.forEach((_, index) => {
+        const OpenDomaindot = document.createElement('span');
+        OpenDomaindot.classList.add('dot-OpenDomain');
+        if (index === 0) {
+          OpenDomaindot.classList.add('active');
+        }
+        OpenDomaindot.addEventListener('click', () => {
+          currentSlide = index;
+          OpenDomainshowSlide(currentSlide);
+        });
+        OpenDomainpaginationDotsContainer.appendChild(OpenDomaindot);
+      });
+
+      const OpenDomaindots = document.querySelectorAll('#pagination-dots-OpenDomain .dot-OpenDomain');
+
+      let OpenDomaincurrentSlide = 0;
+
+      function OpenDomainshowSlide(index) {
+
+        if (index >= OpenDomainitems.length) {
+          OpenDomaincurrentSlide = 0;
+        } else if (index < 0) {
+          OpenDomaincurrentSlide = OpenDomainitems.length - 1;
+        } else {
+          OpenDomaincurrentSlide = index;
+        }
+
+
+        OpenDomainitems.forEach((item, i) => {
+          item.classList.remove('active');
+          if (i === OpenDomaincurrentSlide) {
+            item.classList.add('active');
+          }
+        });
+
+
+        OpenDomaindots.forEach((OpenDomaindot, i) => {
+          OpenDomaindot.classList.remove('active');
+          if (i === OpenDomaincurrentSlide) {
+            OpenDomaindot.classList.add('active');
+          }
+        });
+      }
+
+      function OpenDomainnextSlide() {
+        OpenDomainshowSlide(OpenDomaincurrentSlide + 1);
+      }
+
+      function OpenDomainprevSlide() {
+        OpenDomainshowSlide(OpenDomaincurrentSlide - 1);
+      }
+
+
+      document.querySelector('.layout-nav-OpenDomain.prev').addEventListener('click', OpenDomainprevSlide);
+      document.querySelector('.layout-nav-OpenDomain.next').addEventListener('click', OpenDomainnextSlide);
+
+
+      OpenDomainshowSlide(OpenDomaincurrentSlide);
+
+
+      const HumanDomainitems = document.querySelectorAll('.carousel-item-HumanDomain');
+      const HumanDomainpaginationDotsContainer = document.getElementById('pagination-dots-HumanDomain');
+
+
+      HumanDomainitems.forEach((_, index) => {
+        const HumanDomaindot = document.createElement('span');
+        HumanDomaindot.classList.add('dot-HumanDomain');
+        if (index === 0) {
+          HumanDomaindot.classList.add('active');
+        }
+        HumanDomaindot.addEventListener('click', () => {
+          currentSlide = index;
+          HumanDomainshowSlide(currentSlide);
+        });
+        HumanDomainpaginationDotsContainer.appendChild(HumanDomaindot);
+      });
+
+      const HumanDomaindots = document.querySelectorAll('#pagination-dots-HumanDomain .dot-HumanDomain');
+
+      let HumanDomaincurrentSlide = 0;
+
+      function HumanDomainshowSlide(index) {
+
+        if (index >= HumanDomainitems.length) {
+          HumanDomaincurrentSlide = 0;
+        } else if (index < 0) {
+          HumanDomaincurrentSlide = HumanDomainitems.length - 1;
+        } else {
+          HumanDomaincurrentSlide = index;
+        }
+
+
+        HumanDomainitems.forEach((item, i) => {
+          item.classList.remove('active');
+          if (i === HumanDomaincurrentSlide) {
+            item.classList.add('active');
+          }
+        });
+
+
+        HumanDomaindots.forEach((HumanDomaindot, i) => {
+          HumanDomaindot.classList.remove('active');
+          if (i === HumanDomaincurrentSlide) {
+            HumanDomaindot.classList.add('active');
+          }
+        });
+      }
+
+      function HumanDomainnextSlide() {
+        HumanDomainshowSlide(HumanDomaincurrentSlide + 1);
+      }
+
+      function HumanDomainprevSlide() {
+        HumanDomainshowSlide(HumanDomaincurrentSlide - 1);
+      }
+
+
+      document.querySelector('.layout-nav-HumanDomain.prev').addEventListener('click', HumanDomainprevSlide);
+      document.querySelector('.layout-nav-HumanDomain.next').addEventListener('click', HumanDomainnextSlide);
+
+
+      HumanDomainshowSlide(HumanDomaincurrentSlide);
+
+
+      const Singleitems = document.querySelectorAll('.carousel-item-Single');
+      const SinglepaginationDotsContainer = document.getElementById('pagination-dots-Single');
+
+
+      Singleitems.forEach((_, index) => {
+        const Singledot = document.createElement('span');
+        Singledot.classList.add('dot-Single');
+        if (index === 0) {
+          Singledot.classList.add('active');
+        }
+        Singledot.addEventListener('click', () => {
+          currentSlide = index;
+          SingleshowSlide(currentSlide);
+        });
+        SinglepaginationDotsContainer.appendChild(Singledot);
+      });
+
+      const Singledots = document.querySelectorAll('#pagination-dots-Single .dot-Single');
+
+      let SinglecurrentSlide = 0;
+
+      function SingleshowSlide(index) {
+
+        if (index >= Singleitems.length) {
+          SinglecurrentSlide = 0;
+        } else if (index < 0) {
+          SinglecurrentSlide = Singleitems.length - 1;
+        } else {
+          SinglecurrentSlide = index;
+        }
+
+
+        Singleitems.forEach((item, i) => {
+          item.classList.remove('active');
+          if (i === SinglecurrentSlide) {
+            item.classList.add('active');
+          }
+        });
+
+
+        Singledots.forEach((Singledot, i) => {
+          Singledot.classList.remove('active');
+          if (i === SinglecurrentSlide) {
+            Singledot.classList.add('active');
+          }
+        });
+      }
+
+      function SinglenextSlide() {
+        SingleshowSlide(SinglecurrentSlide + 1);
+      }
+
+      function SingleprevSlide() {
+        SingleshowSlide(SinglecurrentSlide - 1);
+      }
+
+
+      document.querySelector('.layout-nav-Single.prev').addEventListener('click', SingleprevSlide);
+      document.querySelector('.layout-nav-Single.next').addEventListener('click', SinglenextSlide);
+
+
+      SingleshowSlide(SinglecurrentSlide);
+
+
+      const newItems = document.querySelectorAll('.new-layout-item');
+      const newPaginationDotsContainer = document.getElementById('new-pagination-dots');
+
+
+      newItems.forEach((_, index) => {
+        const newDot = document.createElement('span');
+        newDot.classList.add('new-dot');
+        if (index === 0) {
+          newDot.classList.add('active');
+        }
+        newDot.addEventListener('click', () => {
+          currentNewSlide = index;
+          showNewSlide(currentNewSlide);
+        });
+        newPaginationDotsContainer.appendChild(newDot);
+      });
+
+      const newDots = document.querySelectorAll('#new-pagination-dots .new-dot');
+
+      let currentNewSlide = 0;
+
+      function showNewSlide(index) {
+
+        if (index >= newItems.length) {
+          currentNewSlide = 0;
+        } else if (index < 0) {
+          currentNewSlide = newItems.length - 1;
+        } else {
+          currentNewSlide = index;
+        }
+
+
+        newItems.forEach((item, i) => {
+          item.classList.remove('active');
+          if (i === currentNewSlide) {
+            item.classList.add('active');
+          }
+        });
+
+
+        newDots.forEach((newDot, i) => {
+          newDot.classList.remove('active');
+          if (i === currentNewSlide) {
+            newDot.classList.add('active');
+          }
+        });
+      }
+
+      function nextNewSlide() {
+        showNewSlide(currentNewSlide + 1);
+      }
+
+      function prevNewSlide() {
+        showNewSlide(currentNewSlide - 1);
+      }
+
+
+      document.querySelector('.new-layout-nav.prev').addEventListener('click', prevNewSlide);
+      document.querySelector('.new-layout-nav.next').addEventListener('click', nextNewSlide);
+
+
+      showNewSlide(currentNewSlide);
+    });
+
+  </script>
+
+
+  <!-- Dataset Pipeline -->
+  <section class="section" style="margin-top:-70px; margin-bottom:0px;">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="section-title">
+            <h2 class="title is-3 is-centered">OpenS2V-5M Pipeline</h2>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-img">
+              <img id="architecture"
+                src="https://github.com/user-attachments/assets/d695ed59-cbf5-4303-883b-626b116441e3"
+                style="width:1000px; margin-top:20px;margin-bottom:-10px;" />
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 0;">
+          First, we filter low-quality videos based on scores such as aesthetics and motion, then utilize GroundingDino
+          and SAM2.1 to extract subject images and get Regular Data. Subsequently, we create Nexus Data through
+          cross-video association and GPT-Image-1 to address the three core issues encountered by S2V models.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dataset Statistics -->
+  <section class="section" style="margin-top:-90px; margin-bottom:0px;">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="section-title">
+            <h2 class="title is-3 is-centered">OpenS2V-5M Statistics</h2>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-img">
+              <img id="architecture"
+                src="https://github.com/user-attachments/assets/0dba0155-9aa0-4d52-9419-13ac4061fa31"
+                style="width:1000px; margin-top:20px;margin-bottom:-10px;" />
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 0;">
+          The dataset includes a diverse range of categories, clip durations and caption lengths, with most of videos
+          being in high quality (e.g., resolution, aesthetic).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Samples of Dataset -->
+  <section class="section" style="margin-top: -55px;">
+    <div class="container is-max-desktop">
+      <!-- Title -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Samples of OpenS2V-5M</h2>
+        </div>
+      </div>
+      <!-- Videos Grid -->
+      <div class="columns is-multiline is-centered">
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/399b2e42-dd9a-4f3b-aaf7-af309e6628e9"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/be6ec4ac-7016-4ed7-99fe-48f5f909036b"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/bf2a95b2-bbfb-4b65-a6f2-fc2f17449d36"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/5ee0e4c8-45f4-4c74-a705-1a41ee33a89f"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/7d04ce33-084f-4351-b253-c99909dd2a63"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/4ed90def-0d9e-4ba5-aec3-a0deac77f0bd"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <!--/ Videos Grid -->
+    </div>
+  </section>
+
+  <!-- Samples of CINEMA ‡ -->
+  <section class="section" style="margin-top: -3px;">
+    <div class="container is-max-desktop">
+      <!-- Title -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Verification of OpenS2V-5M</h2>
+        </div>
+      </div>
+      <!-- Videos Grid -->
+      <div class="columns is-multiline is-centered">
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/ef38dbf5-72a6-4fb4-8940-05b47c3257ed"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/1f3e05d7-eb68-46ff-96d8-d055c156e528"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/096066f0-8cce-48bc-9db8-260808b42341"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/bb4d759a-f773-46fa-97c8-6ba6a9cc4f5c"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/7afca561-060f-4bd6-9b37-953d51f6507e"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/bb167ce0-b4bc-4625-a51e-3a4da23156e0"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/d4519c13-7b24-4e89-934e-4cd9d3a03e3c"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/9ed67a09-9d53-4865-8c9d-b99c4357cc4d"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video controls>
+            <source src="https://github.com/user-attachments/assets/f19a5397-1415-4086-ac3a-093147338bbd"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <!--/ Videos Grid -->
+      <p style="margin-top: 0;">
+        All videos are generated by <strong>CINEMA ‡</strong>, which was trained on a subset of OpenS2V-5M. (without cherry pick)
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{yuan2025opens2v,
+  title={OpenS2V-Nexus: A Detailed Benchmark and Million-Scale Dataset for Subject-to-Video Generation},
+  author={Yuan, Shenghai and He, Xianyi and Deng, Yufan and Ye, Yang and Huang, Jinfa and Ma Chongyang and Luo, Jiebo and Yuan, Li},
+  journal={arXiv preprint arXiv},
+  year={2025}
+}</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div align=center>
+        <img src="https://www.pnglog.com/6xm07l.png" width="200px">
+      </div>
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://arxiv.org">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/PKU-YuanGroup/OpenS2V-Nexus" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              In order to be compatible with HTML, the videos are transcoded and compressed, so the video quality will
+              be affected.
+            </p>
+            <p>
+              This website is constructed using the templet provided by <a
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. Thanks for their effort.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

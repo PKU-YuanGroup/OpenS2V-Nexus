@@ -49,11 +49,6 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 > [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/PKU-YuanGroup/ChronoMagic-Bench/)  [![github](https://img.shields.io/github/stars/PKU-YuanGroup/ChronoMagic-Bench.svg?style=social)](https://github.com/PKU-YuanGroup/ChronoMagic-Bench/) [![arXiv](https://img.shields.io/badge/Arxiv-2406.18522-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2406.18522) <br>
 > </p></details>
 
-
-## 📣 News
-
-* `[2025.05.26]`  🔥 **All codes & datasets** are out! We also release the **testing prompts**, **reference images** and **videos generated ** by different models in *OpenS2V-Eval*, and you can click [here](https://huggingface.co/datasets/BestWishYsh/OpenS2V-Eval/tree/main/Results) to see more details.
-
 ## ✨ Highlights
 
 1. **New S2V Benchmark.** 

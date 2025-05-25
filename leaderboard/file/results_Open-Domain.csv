@@ -1,9 +1,0 @@
-Model,Venue,TotalScore↑,Aesthetics↑,Motion↑,FaceSim↑,GmeScore↑,NexusScore↑,NaturalScore↑
-[Vidu2.0(20250503)](https://www.vidu.cn/),Closed-Source,47.59%,41.47%,13.52%,35.11%,67.57%,43.55%,71.44%
-[Pika2.1(20250503)](https://pika.art/),Closed-Source,48.88%,46.87%,24.70%,30.80%,69.21%,45.41%,69.79%
-[Kling1.6(20250503)](https://app.klingai.com/cn/),Closed-Source,54.46%,44.60%,41.60%,40.10%,66.20%,45.92%,79.06%
-[VACE-P1.3B](https://github.com/ali-vilab/VACE),Open-Source,43.95%,47.27%,12.03%,16.58%,71.38%,40.04%,70.56%
-[VACE-1.3B](https://github.com/ali-vilab/VACE),Open-Source,45.53%,48.24%,18.83%,20.58%,71.26%,37.95%,71.78%
-[VACE-14B](https://github.com/ali-vilab/VACE),Open-Source,52.87%,47.21%,15.02%,55.09%,67.27%,44.20%,72.78%
-[Phantom-1.3B](https://github.com/Phantom-video/Phantom),Open-Source,50.71%,46.67%,14.29%,48.55%,69.43%,42.44%,70.26%
-[SkyReels-A2-P14B](https://github.com/SkyworkAI/SkyReels-V2),Open-Source,49.61%,39.40%,25.60%,45.95%,64.54%,43.77%,67.22%
