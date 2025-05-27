@@ -1,5 +1,5 @@
 <div align=center>
-<img src="https://github.com/PKU-YuanGroup/OpenS2V-Nexus/blob/main/__assets__/OpenS2V-Nexus_logo.png?raw=true" width="400px">
+<img src="https://github.com/PKU-YuanGroup/OpenS2V-Nexus/blob/main/__assets__/OpenS2V-Nexus_logo.png?raw=true" width="300px">
 </div>
 <h2 align="center"> <a href="https://arxiv.org/abs/2505.20292">OpenS2V-Nexus: A Detailed Benchmark and Million-Scale Dataset for Subject-to-Video Generation</a></h2>
 
@@ -72,7 +72,7 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 * [ConsisID-Preview-Data](https://huggingface.co/datasets/BestWishYsh/ConsisID-preview-Data): including **32K** *human-domain* high-quality subject-text-video triples.
 
 ## 😍 Inhouse Model Gallery 
-This model (MagRef) was trained on a subset of OpenS2V-5M, using about 0.5M high-quality data. (without cherry pick)
+This model (MAGREF‡) was trained on a subset of OpenS2V-5M, using about 0.5M high-quality data. (with fixed seed)
 <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
   <tr>
     <td style="padding: 10px;"><video src="https://github.com/user-attachments/assets/ef38dbf5-72a6-4fb4-8940-05b47c3257ed" controls style="width:100%"></video></td>
