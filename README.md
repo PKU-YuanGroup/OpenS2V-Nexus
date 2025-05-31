@@ -72,27 +72,6 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 * [ConsisID-Bench](https://huggingface.co/datasets/BestWishYsh/ConsisID-preview-Data/tree/main/eval): including 150 *human-domain* subject images and 90 text prompts, respectively.
 * [ConsisID-Preview-Data](https://huggingface.co/datasets/BestWishYsh/ConsisID-preview-Data): including **32K** *human-domain* high-quality subject-text-video triples.
 
-## 😍 Inhouse Model Gallery 
-This model was trained on a subset of OpenS2V-5M, using about 0.5M high-quality data. (with fixed seed)
-<table style="width:100%; border-collapse: collapse; margin: 20px 0;">
-  <tr>
-    <td style="padding: 10px;"><video src="https://github.com/user-attachments/assets/ef38dbf5-72a6-4fb4-8940-05b47c3257ed" controls style="width:100%"></video></td>
-    <td style="padding: 10px;"><video src="https://github.com/user-attachments/assets/1f3e05d7-eb68-46ff-96d8-d055c156e528" controls style="width:100%"></video></td>
-    <td style="padding: 10px;"><video src="https://github.com/user-attachments/assets/096066f0-8cce-48bc-9db8-260808b42341" controls style="width:100%"></video></td> 
-  </tr>
-  <tr>
-  	<td style="padding: 10px;"><video src="https://github.com/user-attachments/assets/bb4d759a-f773-46fa-97c8-6ba6a9cc4f5c" controls style="width:100%"></video></td>
-    <td style="padding: 10px;"><video src="https://github.com/user-attachments/assets/7afca561-060f-4bd6-9b37-953d51f6507e" controls style="width:100%"></video></td>
-    <td style="padding: 10px;"><video src="https://github.com/user-attachments/assets/bb167ce0-b4bc-4625-a51e-3a4da23156e0" controls style="width:100%"></video></td>
-    </video></td>
-  </tr>
-  <tr>
-  	<td style="padding: 10px;"><video src="https://github.com/user-attachments/assets/d4519c13-7b24-4e89-934e-4cd9d3a03e3c" controls style="width:100%"></video></td>
-    <td style="padding: 10px;"><video src="https://github.com/user-attachments/assets/9ed67a09-9d53-4865-8c9d-b99c4357cc4d" controls style="width:100%">
-  	<td style="padding: 10px;"><video src="https://github.com/user-attachments/assets/f19a5397-1415-4086-ac3a-093147338bbd" controls style="width:100%"></video></td>
-  </tr>
-</table>
-
 ## ⚙️ Requirements and Installation
 
 We recommend the requirements as follows.
