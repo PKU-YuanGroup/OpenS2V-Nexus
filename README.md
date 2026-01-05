@@ -53,6 +53,7 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 ## 📣 News
 
 * ⏳⏳⏳ Evaluating more models and updating the [![hf_space](https://img.shields.io/badge/🤗-Leaderboard-blue.svg)](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval). PRs are welcome!
+* `[2026.01.06]`  🚀 We will release the **high-quality subset** very soon! Stay tuned!
 * `[2025.12.05]`  🏃‍♂️ We add the evaluation results for [Saber](https://franciszzj.github.io/Saber/); click [here](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval) for details.
 * `[2025.10.21]`  🏃‍♂️ We add the evaluation results for [Stand-In](https://github.com/WeChatCV/Stand-In) and [BindWeave](https://lzy-dot.github.io/BindWeave); click [here](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval) and [here](https://huggingface.co/datasets/BestWishYsh/OpenS2V-Eval/tree/main/Results) for details.
 * `[2025.09.19]` ✨ Our paper is accepted by **NeurIPS 2025 D&B**!
