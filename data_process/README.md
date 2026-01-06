@@ -246,9 +246,39 @@ python step6-3_merge_json.py
 python step6-4_get_gpt-frame.py
 ```
 
+### Step 7 - Fetch High-Quality Subset
+
+We curate a high-quality subset via tag whitelisting + sample/mask filtering + mask post-processing.
+
+#### Tag Statistics & Filtering
+
+1. **Tag counting**: count tags from all ref_img across samples.
+
+2. **Rule-based filtering**: remove tags containing non-English characters or special symbols.
+
+3. **GPT filtering**: use custom rules to remove overly-common / uninformative tags.
+
+#### Sample & Mask Filtering
+
+Apply the following filters in order:
+
+- **Duration & resolution filter**: remove samples withduration < 2s or > 10s, or shorter side < 480.
+
+- **Tag filter (whitelist)**: remove ref_img whose tag is not in the Allowed Tag List.
+
+- **Aesthetic filter**: remove ref_img with aesthetic score < 4.5.
+
+- **Mask area filter**: remove ref_img whose mask area is < 1/32 of the full image area.
+
+#### Mask Post-processing
+
+- **Mask dedup**: compute pairwise mask IoU; if IoU > 0.8, keep the mask with larger area.
+
+- **Mask selection**: keep the top 6 masks with the highest aesthetic scores.
+
 ## 🗝️ Demo Dataloader
 
-Regarding how to use OpenS2V-5M during the training phase, we provide a demo dataloader [here](https://github.com/PKU-YuanGroup/OpenS2V-Nexus/tree/main/data_process/demo_dataloader.py).
+Regarding how to use OpenS2V-5M during the training phase, we provide a demo dataloader [here](https://github.com/PKU-YuanGroup/OpenS2V-Nexus/tree/main/data_process/demo_dataloader.py). Alternatively, you can refer to the [BindWeave code](https://github.com/bytedance/BindWeave), which uses OpenS2V-5M for training.
 
 ## 🔒 Limitation
 

@@ -53,8 +53,10 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 ## 📣 News
 
 * ⏳⏳⏳ Evaluating more models and updating the [![hf_space](https://img.shields.io/badge/🤗-Leaderboard-blue.svg)](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval). PRs are welcome!
+* `[2026.01.07]`  🔥 We release the **high-quality subset**. It’s not just 0.3M samples — we applied filtering across the entire **5M data**. You can click [here](https://github.com/PKU-YuanGroup/OpenS2V-Nexus/blob/main/data_process/README.md#step-7---fetch-high-quality-subset) for more details, and click [here](https://huggingface.co/datasets/BestWishYsh/OpenS2V-5M/tree/main/Jsons/mask_and_bbox_High-Quality) to download.
 * `[2026.01.06]`  🚀 We will release the **high-quality subset** very soon! Stay tuned!
 * `[2025.12.05]`  🏃‍♂️ We add the evaluation results for [Saber](https://franciszzj.github.io/Saber/); click [here](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval) for details.
+* `[2025.11.04]`  🚀 Great work on [BindWeave](https://github.com/bytedance/BindWeave)! The team has open-sourced the entire codebase, including the pipeline for **training with OpenS2V-5M** and **evaluation on OpenS2V-Eval**. You can refer to this repository as a practical example of how to use OpenS2V-Nexus.
 * `[2025.10.21]`  🏃‍♂️ We add the evaluation results for [Stand-In](https://github.com/WeChatCV/Stand-In) and [BindWeave](https://lzy-dot.github.io/BindWeave); click [here](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval) and [here](https://huggingface.co/datasets/BestWishYsh/OpenS2V-Eval/tree/main/Results) for details.
 * `[2025.09.19]` ✨ Our paper is accepted by **NeurIPS 2025 D&B**!
 * `[2025.08.30]`  🚀 Thanks for the excellent work [DanceGRPO](https://github.com/XueZeyue/DanceGRPO) on transferring [ConsisID data](https://github.com/PKU-YuanGroup/ConsisID) for I2V RL training, please refer to [here](https://github.com/XueZeyue/DanceGRPO?tab=readme-ov-file#training) for more details. Similarly, you can also try using OpenS2V-5M for RL training.
