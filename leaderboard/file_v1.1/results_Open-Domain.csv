@@ -11,3 +11,4 @@ Model,Venue,Evaluated by,TotalScore↑,Aesthetics↑,MotionSmoothness↑,MotionA
 [VACE-14B](https://github.com/ali-vilab/VACE),Open-Source,OpenS2V Team,57.55%,47.21%,94.97%,15.02%,55.09%,67.27%,44.08%,67.04%
 [BindWeave](https://lzy-dot.github.io/BindWeave/),Closed-Source,Weave Team,57.61%,45.55%,95.90%,13.91%,53.71%,67.79%,46.84%,66.85%
 [Saber](https://franciszzj.github.io/Saber/),Closed-Source,Saber Team,57.91%,42.42%,96.12%,21.12%,49.89%,67.50%,47.22%,72.55%
+[VINO](https://sotamak1r.github.io/VINO-web/),Open-Source,VINO Team,57.85%,45.92%,94.73%,12.30%,52.00%,69.69%,42.67%,71.99%

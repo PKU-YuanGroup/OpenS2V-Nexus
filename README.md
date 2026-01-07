@@ -53,9 +53,10 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 ## 📣 News
 
 * ⏳⏳⏳ Evaluating more models and updating the [![hf_space](https://img.shields.io/badge/🤗-Leaderboard-blue.svg)](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval). PRs are welcome!
+* `[2026.01.08]`  🏃‍♂️ We add the evaluation results for [VINO](https://sotamak1r.github.io/VINO-web); click [here](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval) for details.
 * `[2026.01.07]`  🔥 We release the **high-quality subset**. It’s not just 0.3M samples — we applied filtering across the entire **5M data**. You can click [here](https://github.com/PKU-YuanGroup/OpenS2V-Nexus/blob/main/data_process/README.md#step-7---fetch-high-quality-subset) for more details, and click [here](https://huggingface.co/datasets/BestWishYsh/OpenS2V-5M/tree/main/Jsons/mask_and_bbox_High-Quality) to download.
 * `[2026.01.06]`  🚀 We will release the **high-quality subset** very soon! Stay tuned!
-* `[2025.12.05]`  🏃‍♂️ We add the evaluation results for [Saber](https://franciszzj.github.io/Saber/); click [here](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval) for details.
+* `[2025.12.05]`  🏃‍♂️ We add the evaluation results for [Saber](https://franciszzj.github.io/Saber); click [here](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval) for details.
 * `[2025.11.04]`  🚀 Great work on [BindWeave](https://github.com/bytedance/BindWeave)! The team has open-sourced the entire codebase, including the pipeline for **training with OpenS2V-5M** and **evaluation on OpenS2V-Eval**. You can refer to this repository as a practical example of how to use OpenS2V-Nexus.
 * `[2025.10.21]`  🏃‍♂️ We add the evaluation results for [Stand-In](https://github.com/WeChatCV/Stand-In) and [BindWeave](https://lzy-dot.github.io/BindWeave); click [here](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval) and [here](https://huggingface.co/datasets/BestWishYsh/OpenS2V-Eval/tree/main/Results) for details.
 * `[2025.09.19]` ✨ Our paper is accepted by **NeurIPS 2025 D&B**!
@@ -73,7 +74,8 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 ## 💡 Community Works
 If your research or project builds upon [**OpenS2V-5M**](https://github.com/PKU-YuanGroup/OpenS2V-Nexus) or [**OpenS2V-Eval**](https://github.com/PKU-YuanGroup/OpenS2V-Nexus), and you would like more people to see it, please inform us.
 
-- [Saber](https://franciszzj.github.io/Saber/), a zero-shot reference-to-video framework that generates identity-consistent videos from text and reference images without explicit R2V training data, using masked video frames as self-supervision and attention-guided learning to support flexible multi-subject customization.
+- [VINO](https://sotamak1r.github.io/VINO-web), a unified framework for image and video generation and editing. It uses a shared diffusion backbone and interleaved conditioning to enable multi-reference grounding, instruction following, and consistent identity preservation across modalities within a single model.
+- [Saber](https://franciszzj.github.io/Saber), a zero-shot reference-to-video framework that generates identity-consistent videos from text and reference images without explicit R2V training data, using masked video frames as self-supervision and attention-guided learning to support flexible multi-subject customization.
 - [ID-Composer](https://arxiv.org/abs/2511.00511), a reinforcement learning-based multi-subject video generation framework that synthesizes high-quality, identity-consistent videos from text prompts and reference images through hierarchical identity-preserving attention and vision-language model semantic guidance.
 - [BindWeave](https://lzy-dot.github.io/BindWeave), a unified framework that uses multimodal large language model reasoning to disentangle complex prompt semantics and generate high-fidelity, subject-consistent videos across diverse single- and multi-subject scenarios.
 - [Humo](https://phantom-video.github.io/HuMo), a unified, human-centric video generation framework designed to produce high-quality, fine-grained, and controllable human videos from multimodal inputs—including text, images, and audio. It supports strong text prompt following, consistent subject preservation, synchronized audio-driven motion.
