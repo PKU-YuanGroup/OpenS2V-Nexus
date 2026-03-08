@@ -57,7 +57,7 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 ## 📣 News
 
 * ⏳⏳⏳ Evaluating more models and updating the [![hf_space](https://img.shields.io/badge/🤗-Leaderboard-blue.svg)](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval). PRs are welcome!
-* `[2026.03.08]`  👋 We introduct [Helios](https://github.com/PKU-YuanGroup/Helios), a breakthrough video generation model that achieves minute-scale, high-quality video synthesis at **19.5 FPS on a single H100** GPU — without relying on conventional long video anti-drifting strategies or standard video acceleration techniques. 
+* `[2026.03.08]`  👋 We introduct [Helios](https://github.com/PKU-YuanGroup/Helios), a breakthrough video generation model that achieves minute-scale, high-quality video synthesis at **19.5 FPS on a single H100** GPU — without relying on conventional long video anti-drifting strategies or standard video acceleration techniques. Welcome to check [Technical Report](https://huggingface.co/papers/2603.04379)!
 * `[2026.01.08]`  🏃‍♂️ We add the evaluation results for [VINO](https://sotamak1r.github.io/VINO-web); click [here](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval) for details.
 * `[2026.01.07]`  🔥 We release the **high-quality subset**. It’s not just 0.3M samples — we applied filtering across the entire **5M data**. You can click [here](https://github.com/PKU-YuanGroup/OpenS2V-Nexus/blob/main/data_process/README.md#step-7---fetch-high-quality-subset) for more details, and click [here](https://huggingface.co/datasets/BestWishYsh/OpenS2V-5M/tree/main/Jsons/mask_and_bbox_High-Quality) to download.
 * `[2026.01.06]`  🚀 We will release the **high-quality subset** very soon! Stay tuned!
