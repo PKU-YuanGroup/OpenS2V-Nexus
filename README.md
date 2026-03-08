@@ -36,6 +36,10 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 > Bin Lin, Yunyang Ge and Xinhua Cheng etc. <br>
 [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/PKU-YuanGroup/Open-Sora-Plan)  [![github](https://img.shields.io/github/stars/PKU-YuanGroup/Open-Sora-Plan.svg?style=social)](https://github.com/PKU-YuanGroup/Open-Sora-Plan) [![arXiv](https://img.shields.io/badge/Arxiv-2412.00131-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2412.00131) <br>
 >
+> [**Helios: Real Real-Time Long Video Generation Model**](https://arxiv.org/abs/2603.04379) <br>
+> Shenghai Yuan, Jinfa Huang and Xianyi He etc. <br>
+> [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/PKU-YuanGroup/Helios)  [![github](https://img.shields.io/github/stars/PKU-YuanGroup/Helios.svg?style=social)](https://github.com/PKU-YuanGroup/Helios) [![arXiv](https://img.shields.io/badge/Arxiv-2603.04379-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2603.04379) <br>
+>
 > [**ConsisID: Identity-Preserving Text-to-Video Generation by Frequency Decomposition**](https://arxiv.org/abs/2411.17440) <br>
 > Shenghai Yuan, Jinfa Huang and Xianyi He etc. <br>
 > [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/PKU-YuanGroup/ConsisID/)  [![github](https://img.shields.io/github/stars/PKU-YuanGroup/ConsisID.svg?style=social)](https://github.com/PKU-YuanGroup/ConsisID/) [![arXiv](https://img.shields.io/badge/Arxiv-2411.17440-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2411.17440) <br>
@@ -53,6 +57,7 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 ## 📣 News
 
 * ⏳⏳⏳ Evaluating more models and updating the [![hf_space](https://img.shields.io/badge/🤗-Leaderboard-blue.svg)](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval). PRs are welcome!
+* `[2026.03.08]`  👋 We introduct [Helios](https://github.com/PKU-YuanGroup/Helios), a breakthrough video generation model that achieves minute-scale, high-quality video synthesis at **19.5 FPS on a single H100** GPU — without relying on conventional long video anti-drifting strategies or standard video acceleration techniques. 
 * `[2026.01.08]`  🏃‍♂️ We add the evaluation results for [VINO](https://sotamak1r.github.io/VINO-web); click [here](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval) for details.
 * `[2026.01.07]`  🔥 We release the **high-quality subset**. It’s not just 0.3M samples — we applied filtering across the entire **5M data**. You can click [here](https://github.com/PKU-YuanGroup/OpenS2V-Nexus/blob/main/data_process/README.md#step-7---fetch-high-quality-subset) for more details, and click [here](https://huggingface.co/datasets/BestWishYsh/OpenS2V-5M/tree/main/Jsons/mask_and_bbox_High-Quality) to download.
 * `[2026.01.06]`  🚀 We will release the **high-quality subset** very soon! Stay tuned!
