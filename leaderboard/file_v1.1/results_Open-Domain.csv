@@ -12,3 +12,5 @@ Model,Venue,Evaluated by,TotalScore↑,Aesthetics↑,MotionSmoothness↑,MotionA
 [BindWeave](https://lzy-dot.github.io/BindWeave/),Closed-Source,Weave Team,57.61%,45.55%,95.90%,13.91%,53.71%,67.79%,46.84%,66.85%
 [Saber](https://franciszzj.github.io/Saber/),Closed-Source,Saber Team,57.91%,42.42%,96.12%,21.12%,49.89%,67.50%,47.22%,72.55%
 [VINO](https://sotamak1r.github.io/VINO-web/),Open-Source,VINO Team,57.85%,45.92%,94.73%,12.30%,52.00%,69.69%,42.67%,71.99%
+[RefAlign-1.3B](https://github.com/gudaochangsheng/RefAlign),Open-Source,RefAlign Team,56.30%,42.96%,94.74%,20.74%,53.06%,66.85%,43.97%,66.25%
+[RefAlign-14B](https://github.com/gudaochangsheng/RefAlign),Open-Source,RefAlign Team,60.42%,46.84%,97.61%,22.48%,55.23%,68.32%,48.52%,73.63%

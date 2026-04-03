@@ -57,6 +57,7 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 ## 📣 News
 
 * ⏳⏳⏳ Evaluating more models and updating the [![hf_space](https://img.shields.io/badge/🤗-Leaderboard-blue.svg)](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval). PRs are welcome!
+* `[2026.04.03]`  🏃‍♂️ We add the evaluation results for [RefAlign](https://github.com/gudaochangsheng/RefAlign).
 * `[2026.03.08]`  👋 We introduce [Helios](https://github.com/PKU-YuanGroup/Helios), a breakthrough video generation model that achieves minute-scale, high-quality video synthesis at **19.5 FPS on a single H100** GPU — without relying on conventional long video anti-drifting strategies or standard video acceleration techniques. Welcome to check [Technical Report](https://huggingface.co/papers/2603.04379)!
 * `[2026.01.08]`  🏃‍♂️ We add the evaluation results for [VINO](https://sotamak1r.github.io/VINO-web); click [here](https://huggingface.co/spaces/BestWishYsh/OpenS2V-Eval) for details.
 * `[2026.01.07]`  🔥 We release the **high-quality subset**. It’s not just 0.3M samples — we applied filtering across the entire **5M data**. You can click [here](https://github.com/PKU-YuanGroup/OpenS2V-Nexus/blob/main/data_process/README.md#step-7---fetch-high-quality-subset) for more details, and click [here](https://huggingface.co/datasets/BestWishYsh/OpenS2V-5M/tree/main/Jsons/mask_and_bbox_High-Quality) to download.
@@ -79,6 +80,7 @@ This repository is the official implementation of <strong>OpenS2V-Nexus</strong>
 ## 💡 Community Works
 If your research or project builds upon [**OpenS2V-5M**](https://github.com/PKU-YuanGroup/OpenS2V-Nexus) or [**OpenS2V-Eval**](https://github.com/PKU-YuanGroup/OpenS2V-Nexus), and you would like more people to see it, please inform us.
 
+- [RefAlign](https://github.com/gudaochangsheng/RefAlign), a training-time alignment framework for improving reference fidelity, identity consistency, and text controllability in reference-to-video generation.
 - [VINO](https://sotamak1r.github.io/VINO-web), a unified framework for image and video generation and editing. It uses a shared diffusion backbone and interleaved conditioning to enable multi-reference grounding, instruction following, and consistent identity preservation across modalities within a single model.
 - [Saber](https://franciszzj.github.io/Saber), a zero-shot reference-to-video framework that generates identity-consistent videos from text and reference images without explicit R2V training data, using masked video frames as self-supervision and attention-guided learning to support flexible multi-subject customization.
 - [ID-Composer](https://arxiv.org/abs/2511.00511), a reinforcement learning-based multi-subject video generation framework that synthesizes high-quality, identity-consistent videos from text prompts and reference images through hierarchical identity-preserving attention and vision-language model semantic guidance.
